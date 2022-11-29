@@ -27,8 +27,9 @@ const SideContactWrapper = styled.aside`
   width: 0;
   position: fixed;
   left: 0;
-  top: 45%;
   z-index: 1000;
+  top: 50%;
+  transform: translateY(-50%);
 
   .icon {
     font-weight: 700;

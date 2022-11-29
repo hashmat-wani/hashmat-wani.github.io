@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useState } from "react";
+import styled, { css } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import PageHeader from "../common/PageHeader";
@@ -11,8 +11,15 @@ import { ProjectLinks, ProjectPreview, Tags } from "./ProjectTemplate.style";
 
 const ProjectsWrapper = styled.section`
   ${(props) => props.theme.spacing.sectionBottom};
+  /* border: 2px solid blue; */
 `;
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const handleShowAll = () => {
+    setShowAll(true);
+  };
+
   const projects = [
     {
       id: 1,
@@ -157,62 +164,108 @@ const Projects = () => {
   return (
     <ProjectsWrapper id="projects" style={{ marginBottom: 100 }}>
       <PageHeader>Projects</PageHeader>
-
-      {projects.map((node) => (
-        <ProjectTemplate
-          key={node.id}
-          title={node.title}
-          demo={node.demo}
-          github={node.github}
-          desc={node.desc}
-          bulletPoints={node.bulletPoints || null}
-          otherCreators_id={node.otherCreators_id}
-          links={
-            <ProjectLinks>
-              {node.demo && (
-                <Button
-                  target="_blank"
-                  rel="noreferrer"
-                  as="a"
-                  href={node.demo}
-                >
-                  Live Demo
-                </Button>
-              )}
-
-              <IconButton
-                label="github"
-                icon={["fab", "github"]}
-                href={node.github}
-              />
-            </ProjectLinks>
-          }
-          preview={
-            <ProjectPreview>
-              <IFrame liveVideo={node.liveVideo} src={node.iframe} />
-              <Tags>
-                {node.techstack.map((tech, idx) => (
-                  <a
+      <DisplayProjects collapseHeight="1900px" showAll={showAll}>
+        {projects.map((node) => (
+          <ProjectTemplate
+            key={node.id}
+            title={node.title}
+            demo={node.demo}
+            github={node.github}
+            desc={node.desc}
+            bulletPoints={node.bulletPoints || null}
+            otherCreators_id={node.otherCreators_id}
+            links={
+              <ProjectLinks>
+                {node.demo && (
+                  <Button
                     target="_blank"
                     rel="noreferrer"
-                    href={tech.url}
-                    title={tech.title}
-                    key={idx}
+                    as="a"
+                    href={node.demo}
                   >
-                    {node.id === 4 ? (
-                      <div className="techstack_tags">{tech.title}</div>
-                    ) : (
-                      <FontAwesomeIcon icon={["fab", `${tech.icon}`]} />
-                    )}
-                  </a>
-                ))}
-              </Tags>
-            </ProjectPreview>
-          }
-        />
-      ))}
+                    Live Demo
+                  </Button>
+                )}
+
+                <IconButton
+                  label="github"
+                  icon={["fab", "github"]}
+                  href={node.github}
+                />
+              </ProjectLinks>
+            }
+            preview={
+              <ProjectPreview>
+                <IFrame liveVideo={node.liveVideo} src={node.iframe} />
+                <Tags>
+                  {node.techstack.map((tech, idx) => (
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href={tech.url}
+                      title={tech.title}
+                      key={idx}
+                    >
+                      {node.id === 4 ? (
+                        <div className="techstack_tags">{tech.title}</div>
+                      ) : (
+                        <FontAwesomeIcon icon={["fab", `${tech.icon}`]} />
+                      )}
+                    </a>
+                  ))}
+                </Tags>
+              </ProjectPreview>
+            }
+          />
+        ))}
+
+        {!showAll && (
+          <Button onClick={handleShowAll} className="showall__button">
+            Show all
+          </Button>
+        )}
+      </DisplayProjects>
     </ProjectsWrapper>
   );
 };
 
 export default Projects;
+
+const DisplayProjects = styled.div`
+  /* border: 1px solid red; */
+  /* padding: 9px; */
+  overflow: hidden;
+  position: relative;
+
+  ${(props) =>
+    !props.showAll &&
+    css`
+      &:before {
+        content: "";
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        /* border-radius: 10px; */
+        bottom: 0;
+        background: ${(p) =>
+          `linear-gradient(180deg, rgba(0,0,0,0), 40%, ${p.theme.bg})`};
+        z-index: 5;
+        transition: 0.3s;
+      }
+    `}
+
+  .showall__button {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    z-index: 6;
+    padding: 15px 40px;
+    font-weight: bold;
+    transform: translateX(-50%);
+  }
+  max-height: ${(props) => (props.showAll ? "100%" : props.collapseHeight)};
+
+  @media ${(props) => props.theme.media.tablet} {
+    max-height: ${(props) => (props.showAll ? "100%" : "2800px")};
+  }
+`;

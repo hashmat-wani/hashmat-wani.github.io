@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ProjectWrapper = styled.section`
   margin: 80px 0;
+  /* border: 2px solid red; */
 `;
 
 export const ProjectContent = styled.div`
@@ -91,6 +92,7 @@ export const ProjectLinks = styled.div`
 `;
 
 export const ProjectPreview = styled.div`
+  /* border: 1px solid red; */
   grid-column: 2 / 4;
   grid-row: 1;
   position: relative;
@@ -103,7 +105,7 @@ export const ProjectPreview = styled.div`
   }
 
   iframe {
-    border-radius: 10px;
+    border-top-left-radius: 10px;
   }
 `;
 export const Tags = styled.div`

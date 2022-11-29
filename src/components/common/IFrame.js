@@ -9,7 +9,7 @@ const IframeWrapper = styled.div`
   overflow: hidden;
   padding-top: 56.25%;
   background-color: ${(props) => props.theme.accentColor};
-  border-radius: 10px;
+  border-top-left-radius: 10px;
 
   ${(props) =>
     props.liveVideo &&
