@@ -10,7 +10,7 @@ const GithubStats = () => {
 
   useEffect(() => {
     setSrcStats(
-      `https://github-readme-stats.vercel.app/api/?username=hashmat-noorani&show_icons=true&hide_border=true&include_all_commits=true&${
+      `https://github-readme-stats.vercel.app/api?username=hashmat-noorani&show_icons=true&hide_border=true&include_all_commits=true&${
         theme === "light"
           ? "text_color=383838&bg_color=F8F8F8"
           : "text_color=F8F8F8&bg_color=232323"
