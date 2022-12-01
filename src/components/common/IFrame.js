@@ -5,6 +5,7 @@ import styled, { css } from "styled-components";
 import { useInView } from "react-intersection-observer";
 
 const IframeWrapper = styled.div`
+  /* border: 1px solid red; */
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
@@ -26,6 +27,10 @@ const IframeWrapper = styled.div`
     width: 100%;
     height: 100%;
     border: 0;
+  }
+
+  @media ${(props) => props.theme.media.fablet} {
+    border-radius: 10px;
   }
 `;
 
