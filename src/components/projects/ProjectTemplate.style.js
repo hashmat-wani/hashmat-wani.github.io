@@ -98,14 +98,16 @@ export const ProjectPreview = styled.div`
   position: relative;
   right: -20px;
 
+  iframe {
+    border-top-left-radius: 10px;
+  }
   @media ${(props) => props.theme.media.fablet} {
     right: 0;
     grid-column: 1 / 4;
     margin-bottom: 20px;
-  }
-
-  iframe {
-    border-top-left-radius: 10px;
+    iframe {
+      border-radius: 10px;
+    }
   }
 `;
 export const Tags = styled.div`
