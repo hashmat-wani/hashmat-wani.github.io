@@ -1,6 +1,7 @@
 import About from "./components/about/About";
 import Certifications from "./components/certifications/Certifications";
 import Contact from "./components/contact/Contact";
+import Experience from "./components/experience/Experience";
 import GithubOverview from "./components/github/GithubOverview";
 import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Experience />
       <Certifications />
       <GithubOverview />
       <Contact />
