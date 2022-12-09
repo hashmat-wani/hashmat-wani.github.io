@@ -10,6 +10,7 @@ import { HomeWrapper, Intro } from "./Home.style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Typewriter from "typewriter-effect";
 import problemsolving from "../../static/problem-solving.png";
+import leetcode from "../../static/leetcode.svg";
 
 const ThingsILove = () => (
   <Flex justify="space-between" align="center">
@@ -88,15 +89,31 @@ const Home = () => {
                 href="//github.com/hashmat-noorani"
               />
               <IconLink
-                label="twitter"
-                icon={["fab", "twitter"]}
-                href="//twitter.com/hashmatwani_x"
-              />
-              <IconLink
                 label="linkedin"
                 icon={["fab", "linkedin-in"]}
                 href="//linkedin.com/in/hashmat-noorani"
               />
+              <IconLink
+                label="hackerrank"
+                icon={["fab", "hackerrank"]}
+                href="//hackerrank.com/hashmat_noorani"
+              />
+              <a
+                href="//leetcode.com/hashmat-noorani/"
+                target="_blank"
+                aria-label="leetcode"
+                title="leetcode"
+                rel="noreferrer"
+              >
+                <img
+                  src={leetcode}
+                  alt="leetcode icon"
+                  height="22px"
+                  style={{
+                    marginTop: "1px",
+                  }}
+                />
+              </a>
             </div>
           </div>
         </div>

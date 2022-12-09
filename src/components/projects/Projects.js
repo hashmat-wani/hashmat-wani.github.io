@@ -221,7 +221,8 @@ const Projects = () => {
 
         {!showAll && (
           <Button onClick={handleShowAll} className="showall__button">
-            Show all
+            Show all {projects.length} projects&nbsp;&nbsp;
+            <FontAwesomeIcon icon="arrow-right-long" />
           </Button>
         )}
       </DisplayProjects>
@@ -259,7 +260,7 @@ const DisplayProjects = styled.div`
     bottom: 50px;
     left: 50%;
     z-index: 6;
-    padding: 15px 40px;
+    padding: 15px 20px;
     font-weight: bold;
     transform: translateX(-50%);
   }

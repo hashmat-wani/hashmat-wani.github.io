@@ -44,8 +44,13 @@ export const Intro = styled.section`
 
   .home__CTA {
     width: max-content;
+    /* border: 1px solid red; */
+    .cta {
+      padding: 15px 20px;
+    }
   }
   .home__social {
+    /* border: 1px solid red; */
     color: ${(props) => props.theme.primaryColor};
     display: flex;
     justify-content: space-between;

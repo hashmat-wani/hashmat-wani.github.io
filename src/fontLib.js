@@ -2,6 +2,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { library, config } from "@fortawesome/fontawesome-svg-core";
 
 import {
+  faHackerrank,
   faGithub,
   faTwitter,
   faJs,
@@ -13,6 +14,7 @@ import {
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 import {
+  faArrowRightLong,
   faCode,
   faHandshake,
   faPaperPlane,
@@ -24,6 +26,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
+  faHackerrank,
+  faArrowRightLong,
   faBootstrap,
   faGithub,
   faLinkedinIn,
