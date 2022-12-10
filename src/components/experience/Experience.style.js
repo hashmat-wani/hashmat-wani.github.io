@@ -12,4 +12,10 @@ export const ExperienceDetails = styled.div`
   background-color: ${(props) => props.theme.secondaryColor};
   box-shadow: ${(props) => props.theme.shadowSmall};
   border-radius: 10px;
+  @media ${(props) => props.theme.media.tablet} {
+    padding: 40px 30px;
+  }
+  @media ${(props) => props.theme.media.mobile} {
+    padding: 25px 15px;
+  }
 `;

@@ -1,5 +1,4 @@
-import { setElementStyles } from "parallax-controller";
-import React, { useLayoutEffect, useState } from "react";
+import React, { useCallback, useLayoutEffect, useMemo, useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
 import styled from "styled-components";
@@ -55,7 +54,6 @@ const Experience = () => {
       currently_working: false,
       start_date: [2, 2022],
       end_date: [3, 2022],
-      // end_date: false,
       desc: "Student Guide in Masai works with 10 students on average and thus they have the bandwidth to connect with students for their smallest of queries.",
       bulletPoints: false,
       skills: false,
@@ -123,29 +121,55 @@ const Experience = () => {
         ${mos === 1 ? `${mos} mo` : mos > 1 ? `${mos} mos` : ""}`;
     }
   });
-  const [expLeftDivSize, setexpLeftDivSize] = useState([]);
+  const [expLeftDivSize, setExpLeftDivSize] = useState([]);
+  const [toggle, setToggle] = useState(false);
   const ref = useRef(null);
   useLayoutEffect(() => {
-    // setexpLeftDivSize([...ref.current.children]);
-    const handleResize = () => setexpLeftDivSize([...ref.current.children]);
-    // console.log(ref.current.childNodes[0]);
-    // console.log(ref.current.children[0].clientHeight);
-    // console.log(ref.current.childNodes[0].clientHeight);
-    // console.log(ref.current.children);
-    // ref.current.children[0].style.height = "400px";
-    // [...ref.current.children].map((el, idx) => {
-    //   console.log(el);
-    // });
+    adjustSideVerticalLine();
+  }, [toggle]);
 
-    window.addEventListener("resize", handleResize);
+  useEffect(() => {
+    const debouncedHandleResize = debounce(handleResize);
     // Call handler right away so state gets updated with initial window size
-    handleResize();
+    debouncedHandleResize(10);
+
+    window.addEventListener("resize", () => debouncedHandleResize(600));
+
     // Remove event listener on cleanup
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  // window.addEventListener("resize", () => setexpLeftDivSize2(!test2));
-  // console.log(test[0].clientHeight);
-  // ref.current.childNodes.length;
+
+  const debounce = (cb) => {
+    let debounceId;
+    return (delay) => {
+      debounceId && clearTimeout(debounceId);
+      debounceId = setTimeout(() => {
+        cb();
+      }, delay);
+    };
+  };
+  const adjustLineclamp = () => {
+    const element = document.querySelectorAll(".line-clamp");
+    element.forEach((el, idx) => {
+      if (
+        el.offsetHeight < el.scrollHeight ||
+        el.offsetWidth < el.scrollWidth
+      ) {
+        document.querySelectorAll(".toggle")[idx].style.display = "block";
+      } else {
+        document.querySelectorAll(".toggle")[idx].style.display = "none";
+      }
+    });
+  };
+
+  const adjustSideVerticalLine = () => {
+    setExpLeftDivSize([...ref.current.childNodes]);
+  };
+
+  const handleResize = () => {
+    adjustLineclamp();
+    adjustSideVerticalLine();
+  };
 
   return (
     <ExperienceWrapper>
@@ -168,7 +192,7 @@ const Experience = () => {
                         {idx < expLeftDivSize.length - 1 && (
                           <div
                             className="side_vertical_line"
-                            style={{ height: el.offsetHeight - 12 }}
+                            style={{ height: el.offsetHeight - 13 }}
                           ></div>
                         )}
                       </>
@@ -190,7 +214,7 @@ const Experience = () => {
               </Company>
               {experiences
                 .filter((expp) => expp.company_id === comp.id)
-                .map((exp) => (
+                .map((exp, idx) => (
                   <Experiences key={exp.id}>
                     <Heading>
                       <h4>{exp.title}</h4>
@@ -198,13 +222,31 @@ const Experience = () => {
                       <p>{exp.duration}</p>
                     </Heading>
                     <Details>
-                      <p>{exp.desc}</p>
-                      <ul>
-                        {exp.bulletPoints &&
-                          exp.bulletPoints.map((pt, idx) => (
-                            <li key={idx}>{pt}</li>
-                          ))}
-                      </ul>
+                      <div>
+                        <div className={`details line-clamp`}>
+                          <p>{exp.desc}</p>
+                          <ul>
+                            {exp.bulletPoints &&
+                              exp.bulletPoints.map((pt, idx) => (
+                                <li key={idx}>{pt}</li>
+                              ))}
+                          </ul>
+                        </div>
+                        <button
+                          className="toggle"
+                          onClick={() => {
+                            setToggle(!toggle);
+                            document
+                              .querySelectorAll(".details")
+                              [idx].classList.remove(`line-clamp`);
+                            document.querySelectorAll(".toggle")[
+                              idx
+                            ].style.display = "none";
+                          }}
+                        >
+                          ...see more
+                        </button>
+                      </div>
                       {exp.skills && (
                         <p>
                           <b>skills: </b>
@@ -255,7 +297,6 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
-  /* padding-top: 3px; */
   > div {
     /* border: 1px solid red; */
   }
@@ -266,6 +307,7 @@ const Left = styled.div`
     width: 8px;
     border-radius: 50%;
     margin: 8px auto;
+    /* margin-top: 10px; */
   }
   .side_vertical_line {
     background: ${(props) =>
@@ -296,8 +338,27 @@ const Details = styled.div`
   display: flex;
   flex-direction: column;
   gap: 6px;
+  .line-clamp {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+    display: none;
+    font-size: 14px;
+    color: ${(props) => props.theme.primaryText};
+    :hover {
+      color: ${(props) => props.theme.primaryColor};
+    }
+  }
 `;
 
 const Logo = styled.div`
+  padding-top: 3px;
   /* border: 1px solid blue; */
 `;

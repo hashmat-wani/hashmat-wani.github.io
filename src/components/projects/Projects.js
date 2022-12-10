@@ -260,9 +260,13 @@ const DisplayProjects = styled.div`
     bottom: 50px;
     left: 50%;
     z-index: 6;
-    padding: 15px 20px;
+    padding: 15px;
     font-weight: bold;
     transform: translateX(-50%);
+
+    @media ${(props) => props.theme.media.mobile} {
+      padding: 14px 11px;
+    }
   }
   max-height: ${(props) => (props.showAll ? "100%" : props.collapseHeight)};
 

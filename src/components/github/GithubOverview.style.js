@@ -12,4 +12,7 @@ export const GithubDetails = styled.div`
   background-color: ${(props) => props.theme.secondaryColor};
   box-shadow: ${(props) => props.theme.shadowSmall};
   border-radius: 10px;
+  @media ${(props) => props.theme.media.mobile} {
+    padding: 30px;
+  }
 `;

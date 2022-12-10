@@ -5,7 +5,7 @@ import Experience from "./components/experience/Experience";
 import GithubOverview from "./components/github/GithubOverview";
 import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";
-import Skills from "./components/Skills/Skills";
+import Skills from "./components/skills/Skills";
 import SEO from "./SEO";
 
 function App() {
