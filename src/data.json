@@ -1,0 +1,284 @@
+{
+  "certifications": [
+    {
+      "id": 1,
+      "title": "JavaScript Algorithms and Data Structures",
+      "issuing_organization": "freeCodeCamp",
+      "issue_date": "Aug 2022",
+      "expiration_date": null,
+      "credential_id": null,
+      "credential_link": "https://www.freecodecamp.org/certification/HashmatNoorani/javascript-algorithms-and-data-structures"
+    },
+    {
+      "id": 2,
+      "title": "Responsive Web Design",
+      "issuing_organization": "freeCodeCamp",
+      "issue_date": "Aug 2022",
+      "expiration_date": null,
+      "credential_id": null,
+      "credential_link": "https://www.freecodecamp.org/certification/HashmatNoorani/responsive-web-design"
+    },
+    {
+      "id": 3,
+      "title": "Front End Development Libraries",
+      "issuing_organization": "freeCodeCamp",
+      "issue_date": "Sep 2022",
+      "expiration_date": null,
+      "credential_id": null,
+      "credential_link": "https://www.freecodecamp.org/certification/HashmatNoorani/front-end-development-libraries"
+    },
+    {
+      "id": 4,
+      "title": "Back End Development and APIs",
+      "issuing_organization": "freeCodeCamp",
+      "issue_date": "Apr 2022",
+      "expiration_date": null,
+      "credential_id": null,
+      "credential_link": "https://www.freecodecamp.org/certification/HashmatNoorani/back-end-development-and-apis"
+    },
+    {
+      "id": 5,
+      "title": "CSS",
+      "issuing_organization": "HackerRank",
+      "issue_date": "Mar 2022",
+      "expiration_date": null,
+      "credential_id": "6BD437BB5D15",
+      "credential_link": "https://www.hackerrank.com/certificates/6bd437bb5d15"
+    },
+    {
+      "id": 6,
+      "title": "Certificate in Advance Excel",
+      "issuing_organization": "Amity University",
+      "issue_date": "Jan 2021",
+      "expiration_date": null,
+      "credential_id": null,
+      "credential_link": "https://onedrive.live.com/?authkey=%21ABILLS5Q24rdSzg&cid=5AE15EB40FBD5964&id=5AE15EB40FBD5964%216682&parId=5AE15EB40FBD5964%214526&o=OneUp"
+    },
+    {
+      "id": 7,
+      "title": "Certificate in Professional and Life Skills",
+      "issuing_organization": "Amity University",
+      "issue_date": "Jan 2021",
+      "expiration_date": null,
+      "credential_id": null,
+      "credential_link": "https://onedrive.live.com/?cid=5ae15eb40fbd5964&id=5AE15EB40FBD5964%216682&ithint=file%2Cpdf&authkey=%21ABILLS5Q24rdSzg"
+    },
+    {
+      "id": 8,
+      "title": "Cyber Security Foundation Professional Certificate - CSFPC™",
+      "issuing_organization": "CertiProf",
+      "issue_date": "Jan 2021",
+      "expiration_date": "Jan 2023",
+      "credential_id": null,
+      "credential_link": "https://www.youracclaim.com/badges/9d1b66ad-ab4c-4e28-ad99-c40e1fead091?source=linked_in_profile"
+    },
+    {
+      "id": 9,
+      "title": "Lifelong Learning",
+      "issuing_organization": "CertiProf",
+      "issue_date": "Jan 2021",
+      "expiration_date": "Jan 2023",
+      "credential_id": null,
+      "credential_link": "https://www.youracclaim.com/badges/e85da6e8-034a-4f1d-b31d-31a172ad4cdb?source=linked_in_profile"
+    }
+  ],
+
+  "companies": [
+    {
+      "id": "c1",
+      "name": "Masai School",
+      "location": "Remote",
+      "desc": "Masai is an outcome-driven career school whose mission is to skill India’s untapped & underutilized talent and train them for some of the most in-demand jobs in the world.",
+      "logo": "https://media-exp1.licdn.com/dms/image/C560BAQHdxMHntX6Z8Q/company-logo_200_200/0/1650372038245?e=1678924800&v=beta&t=JJF4S3MPdH5DviPExenbpu9gfgakuhPYmITKKsOITx4"
+    }
+  ],
+
+  "experiences": [
+    {
+      "id": "e1",
+      "title": "Instructional Associate",
+      "employment_type": "Full-time",
+      "company_id": "c1",
+      "currently_working": true,
+      "start_date": [4, 2022],
+      "end_date": false,
+      "desc": "Roles & Responsibilities",
+      "bulletPoints": [
+        "Taking problem-solving standups & doubt sessions for over 70+ students on zoom",
+        "Handling 150+ students on slack and resolving their tech queries and doubts",
+        "Taking live Coding & DSA curriculum doubt sessions of students on zoom",
+        "Taking one-on-one Calendly and Pair Programming sessions with students to develop their problem-solving skills",
+        "Reviewing the projects made by students and delivering lectures whenever required"
+      ],
+      "skills": [
+        "React",
+        " · ",
+        "JavaScript",
+        " · ",
+        "MongoDB",
+        " · ",
+        "Node.js",
+        " · ",
+        "Express.js",
+        " · ",
+        "Data Structures"
+      ]
+    },
+    {
+      "id": "e2",
+      "title": "Student Guide",
+      "employment_type": "Part-time",
+      "company_id": "c1",
+      "currently_working": false,
+      "start_date": [2, 2022],
+      "end_date": [3, 2022],
+      "desc": "Student Guide in Masai works with 10 students on average and thus they have the bandwidth to connect with students for their smallest of queries.",
+      "bulletPoints": false,
+      "skills": false
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "title": "Weather App",
+      "desc": "Weather App that displays the weather wherever the user happened to be. I implemented the following user stories:",
+      "bulletPoints": [
+        "Users can view the weather in his/her current location",
+        "Users can search for weather information of other places also",
+        "The weather icon will change depending on weather conditions",
+        "Weekly, daily, and hourly weather reports",
+        "Data on humidity, feels like, as well as the current time of location",
+        "Built-in map allowing users to monitor the weather in a particular region"
+      ],
+      "techstack": [
+        {
+          "icon": "html5",
+          "title": "HTML5",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+        },
+        {
+          "icon": "css3",
+          "title": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "icon": "js",
+          "title": "JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "icon": "bootstrap",
+          "title": "Bootstrap",
+          "url": "https://getbootstrap.com/"
+        }
+      ],
+      "demo": "https://hashmat-noorani.github.io/Weather-App/",
+      "github": "https://github.com/Hashmat-Noorani/Weather-App",
+      "iframe": "https://hashmat-noorani.github.io/Weather-App/",
+      "liveVideo": false,
+      "otherCreators_id": null,
+      "duration": "Mar 2022"
+    },
+    {
+      "id": 2,
+      "title": "Kohl's Clone - Ecommerce",
+      "desc": "A collaborative project (Kohl's Clone - American department store) built by team of 4 members in 5 days. It is fully functional from the users signing in using their email and password, adding items to the basket, checking their basket, removing items if needed, and proceeding to checkout.",
+      "bulletPoints": [
+        "Fully responsive design - You are no longer dependent on computers, you can quickly search for information using various devices: laptops, smartphones, tablets, and even smartwatches."
+      ],
+      "techstack": [
+        {
+          "icon": "html5",
+          "title": "HTML5",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+        },
+        {
+          "icon": "css3",
+          "title": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "icon": "js",
+          "title": "JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "icon": "bootstrap",
+          "title": "Bootstrap",
+          "url": "https://getbootstrap.com/"
+        }
+      ],
+      "demo": "https://hashmat-noorani.github.io/Kohl-s/",
+      "github": "https://github.com/Hashmat-Noorani/Kohl-s",
+      "iframe": "https://hashmat-noorani.github.io/Kohl-s/",
+      "liveVideo": false,
+      "otherCreators_id": ["97455128", "94161952", "94235431"],
+      "duration": "Jan 2022"
+    },
+    {
+      "id": 3,
+      "title": "GetCV - Resumonk Clone",
+      "desc": "This was my first web-based project in my final semester of college. During my project work, I learned things like HTML, CSS, Bootstrap, and JavaScript. It was a great experience making a clone of Resumonk.",
+      "techstack": [
+        {
+          "icon": "html5",
+          "title": "HTML5",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+        },
+        {
+          "icon": "css3",
+          "title": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "icon": "js",
+          "title": "JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "icon": "bootstrap",
+          "title": "Bootstrap",
+          "url": "https://getbootstrap.com/"
+        }
+      ],
+      "bulletPoints": [
+        "Making Resume is a very hectic work for all students. Also, many companies judge the candidature of a student just by his/her Resume. So it is necessary for the student to think beyond the third dimension while making the Resume.",
+        "Resumonk(online resume builder) is the Web Application that helps students to get their resume in hand just by filling up a simple form where important credentials need to be filled in.",
+        "Fully responsive design - You are no longer dependent on computers, you can quickly search for information using various devices: laptops, smartphones, tablets, and even smartwatches"
+      ],
+      "demo": "https://hashmat-noorani.github.io/getCV-Resumonk-Clone/",
+      "github": "https://github.com/Hashmat-Noorani/getCV-Resumonk-Clone",
+      "iframe": "https://hashmat-noorani.github.io/getCV-Resumonk-Clone/",
+      "liveVideo": false,
+      "otherCreators_id": null,
+      "duration": "Apr 2020 - May 2020"
+    },
+    {
+      "id": 4,
+      "title": "SPM - Semester Process Management",
+      "desc": "This is a standalone system designed to automate/reduce the effort and time of maintaining/retrieving data stored by using files and registers in the CSA Department of our college. The record of every student, course, and teacher was handled manually and there was no use of any computer.\nThis project contains mainly the following sections:",
+      "techstack": [
+        {
+          "icon": null,
+          "title": "Visual Basic 6.0",
+          "url": "https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-basic-6/visual-basic-6.0-documentation"
+        },
+        { "icon": null, "title": "Microsoft Access 2007", "url": null }
+      ],
+      "bulletPoints": [
+        "STUDENT INFORMATION",
+        "STAFF INFORMATION",
+        "STUDENT RECORDS (ADD/MODIFY/DELETE)",
+        "STAFF RECORDS (ADD/MODIFY/DELETE)",
+        "ATTENDANCE RECORDS (ADD/MODIFY/DELETE)"
+      ],
+      "demo": false,
+      "github": "https://github.com/Hashmat-Noorani/SPM",
+      "iframe": "https://drive.google.com/file/d/1RJ7dIVhdBPgxY2q0E7lAgz2XwBOyeEaR/preview",
+      "liveVideo": false,
+      "otherCreators_id": null,
+      "duration": "Jun 2019 - Sep 2019"
+    }
+  ]
+}

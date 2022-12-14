@@ -1,64 +1,35 @@
-import React, { useCallback, useLayoutEffect, useMemo, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useLayoutEffect, useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
 import styled from "styled-components";
+import Button from "../common/Button";
 import PageHeader from "../common/PageHeader";
-import { ExperienceWrapper, ExperienceDetails } from "./Experience.style";
+import { ShowAllContainer } from "../common/ShowAllContainer";
+import {
+  ExperienceWrapper,
+  ExperienceDetails,
+  CompanyDetails,
+  Left,
+  Logo,
+  Right,
+  Company,
+  Heading,
+  Details,
+  Experiences,
+} from "./Experience.style";
+import data from "../../data.json";
 
 const Experience = () => {
-  const companies = [
-    {
-      id: "c1",
-      name: "Masai School",
-      location: "Remote",
-      desc: "Masai is an outcome-driven career school whose mission is to skill India’s untapped & underutilized talent and train them for some of the most in-demand jobs in the world.",
-      logo: "https://media-exp1.licdn.com/dms/image/C560BAQHdxMHntX6Z8Q/company-logo_200_200/0/1650372038245?e=1678924800&v=beta&t=JJF4S3MPdH5DviPExenbpu9gfgakuhPYmITKKsOITx4",
-    },
-  ];
-  const experiences = [
-    {
-      id: "e1",
-      title: "Instructional Associate",
-      employment_type: "Full-time",
-      company_id: "c1",
-      currently_working: true,
-      start_date: [4, 2022],
-      end_date: false,
-      desc: "Roles & Responsibilities",
-      bulletPoints: [
-        "Taking problem-solving standups & doubt sessions for over 70+ students on zoom",
-        "Handling 150+ students on slack and resolving their tech queries and doubts",
-        "Taking live Coding & DSA curriculum doubt sessions of students on zoom",
-        "Taking one-on-one Calendly and Pair Programming sessions with students to develop their problem-solving skills",
-        "Reviewing the projects made by students and delivering lectures whenever required",
-      ],
-      skills: [
-        "React",
-        " · ",
-        "JavaScript",
-        " · ",
-        "MongoDB",
-        " · ",
-        "Node.js",
-        " · ",
-        "Express.js",
-        " · ",
-        "Data Structures",
-      ],
-    },
-    {
-      id: "e2",
-      title: "Student Guide",
-      employment_type: "Part-time",
-      company_id: "c1",
-      currently_working: false,
-      start_date: [2, 2022],
-      end_date: [3, 2022],
-      desc: "Student Guide in Masai works with 10 students on average and thus they have the bandwidth to connect with students for their smallest of queries.",
-      bulletPoints: false,
-      skills: false,
-    },
-  ];
+  const companies = JSON.parse(JSON.stringify(data)).companies;
+  const experiences = JSON.parse(JSON.stringify(data)).experiences;
+
+  const [showAll, setShowAll] = useState(companies.length > 1 ? false : true);
+
+  const handleShowAll = () => {
+    setShowAll(true);
+  };
+
   const monthNames = [
     "",
     "Jan",
@@ -121,9 +92,9 @@ const Experience = () => {
         ${mos === 1 ? `${mos} mo` : mos > 1 ? `${mos} mos` : ""}`;
     }
   });
-  const [expLeftDivSize, setExpLeftDivSize] = useState([]);
+  const [expLeftDivCount, setExpLeftDivCount] = useState([]);
   const [toggle, setToggle] = useState(false);
-  const ref = useRef(null);
+  const ref = useRef([]);
   useLayoutEffect(() => {
     adjustSideVerticalLine();
   }, [toggle]);
@@ -150,20 +121,22 @@ const Experience = () => {
   };
   const adjustLineclamp = () => {
     const element = document.querySelectorAll(".line-clamp");
-    element.forEach((el, idx) => {
+    element.forEach((el) => {
       if (
         el.offsetHeight < el.scrollHeight ||
         el.offsetWidth < el.scrollWidth
       ) {
-        document.querySelectorAll(".toggle")[idx].style.display = "block";
+        el.nextSibling.style.display = "block";
+        // document.querySelectorAll(".toggle")[idx].style.display = "block";
       } else {
-        document.querySelectorAll(".toggle")[idx].style.display = "none";
+        el.nextSibling.style.display = "none";
+        // document.querySelectorAll(".toggle")[idx].style.display = "none";
       }
     });
   };
 
   const adjustSideVerticalLine = () => {
-    setExpLeftDivSize([...ref.current.childNodes]);
+    setExpLeftDivCount(ref.current.map((el) => [...el.childNodes]));
   };
 
   const handleResize = () => {
@@ -172,193 +145,105 @@ const Experience = () => {
   };
 
   return (
-    <ExperienceWrapper>
+    <ExperienceWrapper id="experience">
       <PageHeader>Experience</PageHeader>
-
-      <ExperienceDetails>
-        {companies.map((comp) => (
-          <CompanyDetails key={comp.id}>
-            <Left>
-              {ref.current &&
-                expLeftDivSize.map((el, idx) => (
-                  <div key={idx} style={{ height: el.offsetHeight }}>
-                    {idx === 0 ? (
-                      <Logo>
-                        <img src={comp.logo} alt="logo" width="100%" />
-                      </Logo>
-                    ) : (
-                      <>
-                        <div className="side_bullet"></div>
-                        {idx < expLeftDivSize.length - 1 && (
-                          <div
-                            className="side_vertical_line"
-                            style={{ height: el.offsetHeight - 13 }}
-                          ></div>
-                        )}
-                      </>
-                    )}
-                  </div>
-                ))}
-            </Left>
-
-            <Right ref={ref}>
-              <Company>
-                <Heading>
-                  <h3>{comp.name}</h3>
-                  {comp.duration && <p>{comp.duration}</p>}
-                  <p>{comp.location}</p>
-                </Heading>
-                <Details>
-                  <p>{comp.desc}</p>
-                </Details>
-              </Company>
-              {experiences
-                .filter((expp) => expp.company_id === comp.id)
-                .map((exp, idx) => (
-                  <Experiences key={exp.id}>
-                    <Heading>
-                      <h4>{exp.title}</h4>
-                      <p>{exp.employment_type}</p>
-                      <p>{exp.duration}</p>
-                    </Heading>
-                    <Details>
-                      <div>
-                        <div className={`details line-clamp`}>
-                          <p>{exp.desc}</p>
-                          <ul>
-                            {exp.bulletPoints &&
-                              exp.bulletPoints.map((pt, idx) => (
-                                <li key={idx}>{pt}</li>
-                              ))}
-                          </ul>
-                        </div>
-                        <button
-                          className="toggle"
-                          onClick={() => {
-                            setToggle(!toggle);
-                            document
-                              .querySelectorAll(".details")
-                              [idx].classList.remove(`line-clamp`);
-                            document.querySelectorAll(".toggle")[
-                              idx
-                            ].style.display = "none";
-                          }}
-                        >
-                          ...see more
-                        </button>
-                      </div>
-                      {exp.skills && (
-                        <p>
-                          <b>skills: </b>
-                          {exp.skills}
-                        </p>
+      <ShowAllContainer collapseHeight="700px" showAll={showAll}>
+        <ExperienceDetails>
+          {companies.map((comp, index) => (
+            <CompanyDetails key={comp.id}>
+              <Left>
+                {ref.current.length > 0 &&
+                  expLeftDivCount[index].map((el, idx) => (
+                    <div key={idx} style={{ height: el.offsetHeight }}>
+                      {idx === 0 ? (
+                        <Logo>
+                          <img src={comp.logo} alt="logo" width="100%" />
+                        </Logo>
+                      ) : (
+                        <>
+                          <div className="side_bullet"></div>
+                          {idx < expLeftDivCount[index].length - 1 && (
+                            <div
+                              className="side_vertical_line"
+                              style={{ height: el.offsetHeight - 13 }}
+                            ></div>
+                          )}
+                        </>
                       )}
-                    </Details>
-                  </Experiences>
-                ))}
-            </Right>
-          </CompanyDetails>
-        ))}
-      </ExperienceDetails>
+                    </div>
+                  ))}
+              </Left>
+
+              <Right ref={(el) => (ref.current[index] = el)}>
+                <Company>
+                  <Heading>
+                    <h3>{comp.name}</h3>
+                    {comp.duration && <p>{comp.duration}</p>}
+                    <p>{comp.location}</p>
+                  </Heading>
+                  <Details>
+                    <p>{comp.desc}</p>
+                  </Details>
+                </Company>
+                {experiences
+                  .filter((expp) => expp.company_id === comp.id)
+                  .map((exp, i) => (
+                    <Experiences key={exp.id}>
+                      <Heading>
+                        <h4>{exp.title}</h4>
+                        <p>{exp.employment_type}</p>
+                        <p>{exp.duration}</p>
+                      </Heading>
+                      <Details>
+                        <div>
+                          <div className={`details line-clamp`}>
+                            <p>{exp.desc}</p>
+                            {exp.bulletPoints && (
+                              <ul>
+                                {exp.bulletPoints &&
+                                  exp.bulletPoints.map((pt, i) => (
+                                    <li key={i}>{pt}</li>
+                                  ))}
+                              </ul>
+                            )}
+                          </div>
+                          <button
+                            className="toggle"
+                            onClick={() => {
+                              setToggle(!toggle);
+                              document
+                                .querySelectorAll(".details")
+                                [i].classList.remove(`line-clamp`);
+                              document.querySelectorAll(".toggle")[
+                                i
+                              ].style.display = "none";
+                            }}
+                          >
+                            ...see more
+                          </button>
+                        </div>
+                        {exp.skills && (
+                          <p>
+                            <b>skills: </b>
+                            {exp.skills}
+                          </p>
+                        )}
+                      </Details>
+                    </Experiences>
+                  ))}
+              </Right>
+            </CompanyDetails>
+          ))}
+        </ExperienceDetails>
+        {!showAll && (
+          <Button onClick={handleShowAll} className="showall__button">
+            Show all {companies.length} experiences&nbsp;&nbsp;
+            <FontAwesomeIcon icon="arrow-right-long" />
+          </Button>
+        )}
+      </ShowAllContainer>
     </ExperienceWrapper>
   );
 };
 
 export default Experience;
-
-const CompanyDetails = styled.div`
-  display: flex;
-  gap: 10px;
-  /* border: 1px solid red; */
-  & h3,
-  h4,
-  p {
-    margin: 3px 0;
-  }
-  & p {
-    font-size: 14px;
-  }
-
-  ul {
-    /* border: 1px solid red; */
-    list-style: disc;
-    padding: 0 20px;
-    font-size: 14px;
-    line-height: 140%;
-    margin: 0;
-    font-family: ${(p) => p.theme.secondaryFontFamily};
-    color: ${(p) => p.theme.primaryText};
-  }
-`;
-
-const Left = styled.div`
-  max-width: 50px;
-  /* border: 1px solid blue; */
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  > div {
-    /* border: 1px solid red; */
-  }
-  .side_bullet {
-    background: ${(props) =>
-      props.theme.dark ? props.theme.primaryText : "#0000004D"};
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    margin: 8px auto;
-    /* margin-top: 10px; */
-  }
-  .side_vertical_line {
-    background: ${(props) =>
-      props.theme.dark ? props.theme.primaryText : "#00000014"};
-    width: 2px;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-`;
-const Right = styled.div`
-  /* border: 1px solid green; */
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  > div {
-    /* border: 1px solid green; */
-  }
-`;
-const Company = styled.div``;
-
-const Experiences = styled.div``;
-
-const Heading = styled.div`
-  margin-bottom: 9px;
-`;
-const Details = styled.div`
-  /* border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  .line-clamp {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-  .toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    float: right;
-    display: none;
-    font-size: 14px;
-    color: ${(props) => props.theme.primaryText};
-    :hover {
-      color: ${(props) => props.theme.primaryColor};
-    }
-  }
-`;
-
-const Logo = styled.div`
-  padding-top: 3px;
-  /* border: 1px solid blue; */
-`;

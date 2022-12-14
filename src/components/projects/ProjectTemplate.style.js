@@ -30,6 +30,7 @@ export const ProjectDetail = styled.div`
     }
     h2 {
       color: ${(p) => p.theme.primaryColor};
+      margin-bottom: 0;
     }
     h2:hover {
       color: ${(p) => p.theme.primaryText};
@@ -41,14 +42,14 @@ export const ProjectDetail = styled.div`
       margin: 25px 0 35px 0;
       line-height: 170%;
       min-height: 250px;
-      li {
-        font-size: 16px;
+
+      ul {
+        /* border: 1px solid red; */
+        list-style: disc;
+        padding: 0 20px;
         line-height: 150%;
         font-family: ${(p) => p.theme.secondaryFontFamily};
         color: ${(p) => p.theme.primaryText};
-        :nth-of-type(1) {
-          margin-top: 10px;
-        }
       }
     }
   }
@@ -81,10 +82,11 @@ export const ProjectDetail = styled.div`
 `;
 
 export const ProjectLinks = styled.div`
+  /* border: 1px solid red; */
   display: flex;
   align-items: center;
-  margin: 20px 0;
-  margin-bottom: 0;
+  /* margin: 20px 0; */
+  /* margin-bottom: 0; */
 
   a {
     margin-right: 10px;

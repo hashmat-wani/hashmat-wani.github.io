@@ -14,9 +14,9 @@ function App() {
       <SEO />
       <Home />
       <About />
+      <Experience />
       <Skills />
       <Projects />
-      <Experience />
       <Certifications />
       <GithubOverview />
       <Contact />

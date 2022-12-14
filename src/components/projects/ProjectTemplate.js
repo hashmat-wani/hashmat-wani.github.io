@@ -10,6 +10,7 @@ import axios from "axios";
 
 const ProjectTemplate = ({
   title,
+  duration,
   demo,
   github,
   desc,
@@ -44,13 +45,19 @@ const ProjectTemplate = ({
             <a href={demo || github} target="_blank" rel="noreferrer">
               <h2>{title}</h2>
             </a>
+            <p style={{ fontSize: "14px" }}>{duration}</p>
             <div className="desc_container">
               {descArray.map((desc, idx) => (
                 <p key={idx}>{desc}</p>
               ))}
 
-              {bulletPoints &&
-                bulletPoints.map((point, idx) => <li key={idx}>{point}</li>)}
+              {bulletPoints && (
+                <ul>
+                  {bulletPoints.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
+              )}
             </div>
             {creators.length !== 0 && (
               <div className="other_creators">

@@ -14,6 +14,11 @@ const NavItemsSmoothLinks = ({ NavItem }) => (
       </SLink>
     </NavItem>
     <NavItem>
+      <SLink smooth offset={-100} hashSpy to="experience">
+        experience
+      </SLink>
+    </NavItem>
+    <NavItem>
       <SLink smooth offset={-100} hashSpy to="skills">
         skills
       </SLink>
