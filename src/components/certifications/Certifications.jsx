@@ -85,6 +85,9 @@ const CertificationsCard = styled.div`
   border-radius: 10px;
   padding: 30px;
   height: 280px;
+  p {
+    font-size: 15px;
+  }
 
   h4 {
     color: ${(props) => props.theme.primaryColor};
