@@ -111,7 +111,7 @@ export const Details = styled.div`
     cursor: pointer;
     float: right;
     display: none;
-    font-size: 14px;
+    font-size: 13px;
     color: ${(props) => props.theme.primaryText};
     :hover {
       color: ${(props) => props.theme.primaryColor};
