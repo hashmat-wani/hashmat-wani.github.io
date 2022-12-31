@@ -280,5 +280,56 @@
       "otherCreators_id": null,
       "duration": "Jun 2019 - Sep 2019"
     }
+  ],
+
+  "JSProjects": [
+    {
+      "id": "mp1",
+      "title": "Weather App",
+      "thumbnail": "https://i.ibb.co/sm2KFbM/weather-app.png",
+      "demo": "https://weather-app-beryl-two.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/Weather-App",
+      "desc": "Weather App that displays the weather wherever the user happened to be."
+    },
+    {
+      "id": "mp2",
+      "title": "English Dictionary",
+      "thumbnail": "https://i.ibb.co/CtPW8RP/dictionary.png",
+      "demo": "https://english-dictionary-gamma.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/english-dictionary",
+      "desc": "Type a word and get clear and simple definitions with example, pronunciation, synonyms and antonyms"
+    },
+    {
+      "id": "mp3",
+      "title": "English Dictionary",
+      "thumbnail": "https://i.ibb.co/CtPW8RP/dictionary.png",
+      "demo": "https://english-dictionary-gamma.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/english-dictionary",
+      "desc": "Weather App that displays the weather wherever the user happened to be."
+    },
+    {
+      "id": "mp4",
+      "title": "English Dictionary",
+      "thumbnail": "https://i.ibb.co/CtPW8RP/dictionary.png",
+      "demo": "https://english-dictionary-gamma.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/english-dictionary",
+      "desc": "Weather App that displays the weather wherever the user happened to be."
+    },
+    {
+      "id": "mp5",
+      "title": "English Dictionary",
+      "thumbnail": "https://i.ibb.co/CtPW8RP/dictionary.png",
+      "demo": "https://english-dictionary-gamma.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/english-dictionary",
+      "desc": "Weather App that displays the weather wherever the user happened to be."
+    },
+    {
+      "id": "mp6",
+      "title": "Weather App",
+      "thumbnail": "https://i.ibb.co/sm2KFbM/weather-app.png",
+      "demo": "https://weather-app-beryl-two.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/Weather-App",
+      "desc": "Weather App that displays the weather wherever the user happened to be."
+    }
   ]
 }

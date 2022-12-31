@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useLayoutEffect, useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
-import styled from "styled-components";
 import Button from "../common/Button";
 import PageHeader from "../common/PageHeader";
 import { ShowAllContainer } from "../common/ShowAllContainer";
