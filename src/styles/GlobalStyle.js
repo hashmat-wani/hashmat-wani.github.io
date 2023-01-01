@@ -69,9 +69,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 30px 0;
   }
 
-  @media all and (min-width: 450px) {
-    ${scrollBar};
-  }
+  /* @media all and (min-width: 450px) { */
+    ${scrollBar}
+  /* } */
 
  
   

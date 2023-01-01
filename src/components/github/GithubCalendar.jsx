@@ -4,58 +4,58 @@ import ReactTooltip from "react-tooltip";
 import { GithubCalendarWrapper } from "./GithubCalendar.style";
 import SubpageHeader from "../common/SubpageHeader";
 
-const calendars = ["phone", "tablet", "fablet", "desktop"];
+// const calendars = ["phone", "tablet", "fablet", "desktop"];
 
-const selectLast9Months = (contributions) => {
-  const currentYear = new Date().getFullYear();
-  const currentMonth = new Date().getMonth();
-  const shownMonths = 9;
+// const selectLast9Months = (contributions) => {
+//   const currentYear = new Date().getFullYear();
+//   const currentMonth = new Date().getMonth();
+//   const shownMonths = 9;
 
-  return contributions.filter((day) => {
-    const date = new Date(day.date);
-    const monthOfDay = date.getMonth();
+//   return contributions.filter((day) => {
+//     const date = new Date(day.date);
+//     const monthOfDay = date.getMonth();
 
-    return (
-      date.getFullYear() === currentYear &&
-      monthOfDay > currentMonth - shownMonths &&
-      monthOfDay <= currentMonth
-    );
-  });
-};
+//     return (
+//       date.getFullYear() === currentYear &&
+//       monthOfDay > currentMonth - shownMonths &&
+//       monthOfDay <= currentMonth
+//     );
+//   });
+// };
 
-const selectLast6Months = (contributions) => {
-  const currentYear = new Date().getFullYear();
-  const currentMonth = new Date().getMonth();
-  const shownMonths = 6;
+// const selectLast6Months = (contributions) => {
+//   const currentYear = new Date().getFullYear();
+//   const currentMonth = new Date().getMonth();
+//   const shownMonths = 6;
 
-  return contributions.filter((day) => {
-    const date = new Date(day.date);
-    const monthOfDay = date.getMonth();
+//   return contributions.filter((day) => {
+//     const date = new Date(day.date);
+//     const monthOfDay = date.getMonth();
 
-    return (
-      date.getFullYear() === currentYear &&
-      monthOfDay > currentMonth - shownMonths &&
-      monthOfDay <= currentMonth
-    );
-  });
-};
+//     return (
+//       date.getFullYear() === currentYear &&
+//       monthOfDay > currentMonth - shownMonths &&
+//       monthOfDay <= currentMonth
+//     );
+//   });
+// };
 
-const selectLast4Months = (contributions) => {
-  const currentYear = new Date().getFullYear();
-  const currentMonth = new Date().getMonth();
-  const shownMonths = 4;
+// const selectLast4Months = (contributions) => {
+//   const currentYear = new Date().getFullYear();
+//   const currentMonth = new Date().getMonth();
+//   const shownMonths = 4;
 
-  return contributions.filter((day) => {
-    const date = new Date(day.date);
-    const monthOfDay = date.getMonth();
+//   return contributions.filter((day) => {
+//     const date = new Date(day.date);
+//     const monthOfDay = date.getMonth();
 
-    return (
-      date.getFullYear() === currentYear &&
-      monthOfDay > currentMonth - shownMonths &&
-      monthOfDay <= currentMonth
-    );
-  });
-};
+//     return (
+//       date.getFullYear() === currentYear &&
+//       monthOfDay > currentMonth - shownMonths &&
+//       monthOfDay <= currentMonth
+//     );
+//   });
+// };
 
 const GithubCalendar = () => {
   return (
@@ -64,7 +64,7 @@ const GithubCalendar = () => {
         GitHub Calendar
       </SubpageHeader>
 
-      {calendars.map((cal, idx) => (
+      {/* {calendars.map((cal, idx) => (
         <div className={cal} key={idx}>
           <GitHubCalendar
             blockSize={13.5}
@@ -92,7 +92,22 @@ const GithubCalendar = () => {
             <ReactTooltip delayShow={40} html />
           </GitHubCalendar>
         </div>
-      ))}
+      ))} */}
+
+      <div className="scroll-div">
+        <GitHubCalendar
+          blockSize={13.5}
+          blockMargin={7}
+          username="hashmat-noorani"
+          style={{
+            minWidth: "770px",
+            // border: "1px solid red",
+            padding: "7px 12px 7px 7px",
+          }}
+        >
+          <ReactTooltip delayShow={40} html />
+        </GitHubCalendar>
+      </div>
     </GithubCalendarWrapper>
   );
 };

@@ -14,6 +14,7 @@ const scrollBar = css`
     border-radius: 1rem;
     border: 3px solid transparent;
     background-clip: content-box;
+    width: 2px;
   }
 
   ::-moz-scrollbartrack-vertical {

@@ -49,7 +49,9 @@ const Card = React.memo(({ node }) => (
 ));
 
 const Concepts = () => {
-  const [showAll, setShowAll] = useState(false);
+  const [showAll, setShowAll] = useState(
+    data.JSProjects.length > 6 ? false : true
+  );
 
   const handleShowAll = () => {
     setShowAll(true);
