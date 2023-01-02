@@ -286,7 +286,7 @@
     {
       "id": "mp1",
       "title": "Image Resizer - Compressor",
-      "thumbnail": "https://i.ibb.co/HYgpz0y/image-compressor.png",
+      "thumbnail": "https://i.ibb.co/WgT9Pk8/after-Upload.png",
       "demo": "https://image-compressor-resizer.vercel.app/",
       "github": "https://github.com/hashmat-noorani/image-compressor-resizer",
       "desc": "User can upload an image and resize its width & height or reduce its quality(from 10%-100%) with slider. Also User can convert image from jpeg to png and vice versa. Finally user can download resized/converted/compressed images by single click."
