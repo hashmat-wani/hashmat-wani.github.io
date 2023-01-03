@@ -14,7 +14,13 @@ import data from "../../data.json";
 const Card = React.memo(({ node }) => (
   <JSProjectCard>
     <div style={{ width: "100%", height: "100%" }}>
-      <img alt={node.title} src={node.thumbnail} width="100%" border="0" />
+      <img
+        alt={node.title}
+        src={node.thumbnail}
+        width="100%"
+        border="0"
+        height="100%"
+      />
     </div>
 
     <JSProjectCardFooter

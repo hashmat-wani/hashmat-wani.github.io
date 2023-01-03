@@ -306,6 +306,22 @@
       "demo": "https://english-dictionary-gamma.vercel.app/",
       "github": "https://github.com/hashmat-noorani/english-dictionary",
       "desc": "Type a word and get clear and simple definitions with example, pronunciation, synonyms and antonyms"
+    },
+    {
+      "id": "mp4",
+      "title": "Alarm Clock",
+      "thumbnail": "https://i.ibb.co/RgySj9Q/Screenshot-20230103-044626.png",
+      "demo": "https://alarm-clock-murex.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/alarm-clock",
+      "desc": "There is a digital clock that shows the current time along with alarm option. Users can select a time and set alarm for any time, whether AM or PM."
+    },
+    {
+      "id": "mp5",
+      "title": "Flip a coin",
+      "thumbnail": "https://i.ibb.co/Mp7c4w3/flip-a-coin.png",
+      "demo": "https://flip-a-coin-3d.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/flip-a-coin",
+      "desc": "On flipping a coin, it produces head/tail with a cool 3D animation. It even maintains statistics about the heads and tails count. User can reset the status with the reset button."
     }
   ]
 }
