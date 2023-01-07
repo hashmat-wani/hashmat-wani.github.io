@@ -77,7 +77,7 @@ const Home = () => {
               rel="noreferrer"
               className="cta"
               as="a"
-              href="https://drive.google.com/file/d/1RUbFlxXR_Q3aUxbbRT8ffjyg9JY19bxw/view?usp=share_link"
+              href="https://drive.google.com/file/d/1S7qewIEfCn5u71U-3wubPM9xEWxbpsGw/view?usp=sharing"
             >
               Download Resume
             </Button>
