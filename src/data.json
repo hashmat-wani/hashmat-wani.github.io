@@ -285,6 +285,14 @@
   "JSProjects": [
     {
       "id": "mp1",
+      "title": "QR code Generator/Scanner",
+      "thumbnail": "https://i.ibb.co/KGR9n6v/qrcode-mv.png",
+      "demo": "https://q-rcode-generator-scanner.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/QRcode-Generator-Scanner",
+      "desc": "This app is combination of both QR code Generator & Scanner, where User can enter a text or URL to generate a styled QR code for it. or scan a QR code by the camera. User can also upload or _Drag & Drop_ any QR code image, and decode or extract the content from it. And Finally User can download a QR code in 3 different formats - PNG/JPG/SVG."
+    },
+    {
+      "id": "mp2",
       "title": "Tic Tac Toe",
       "thumbnail": "https://i.ibb.co/Kz28BVN/tic-tac-toe.png",
       "demo": "https://tic-tac-toe-gamee.vercel.app/",
@@ -292,7 +300,7 @@
       "desc": "Tic-Tac-Toe is a game in which two players seek alternate turns to complete a row, a column, or a diagonal with either three O’s or three X’s drawn in the spaces of a grid of nine squares. For more details, please go through Github readme."
     },
     {
-      "id": "mp2",
+      "id": "mp3",
       "title": "Image Resizer - Compressor",
       "thumbnail": "https://i.ibb.co/VtxRkYp/after-Upload.png",
       "demo": "https://image-compressor-resizer.vercel.app/",
@@ -300,7 +308,7 @@
       "desc": "User can upload an image and resize its width & height or reduce its quality(from 10%-100%) with slider. Also User can convert image from jpeg to png and vice versa. Finally user can download resized/converted/compressed images by single click."
     },
     {
-      "id": "mp3",
+      "id": "mp4",
       "title": "Weather App",
       "thumbnail": "https://i.ibb.co/sm2KFbM/weather-app.png",
       "demo": "https://weather-app-beryl-two.vercel.app/",
@@ -308,7 +316,7 @@
       "desc": "Weather App that displays the weather wherever the user happened to be."
     },
     {
-      "id": "mp4",
+      "id": "mp5",
       "title": "English Dictionary",
       "thumbnail": "https://i.ibb.co/CtPW8RP/dictionary.png",
       "demo": "https://english-dictionary-gamma.vercel.app/",
@@ -316,7 +324,7 @@
       "desc": "Type a word and get clear and simple definitions with example, pronunciation, synonyms and antonyms"
     },
     {
-      "id": "mp5",
+      "id": "mp6",
       "title": "Alarm Clock",
       "thumbnail": "https://i.ibb.co/RgySj9Q/Screenshot-20230103-044626.png",
       "demo": "https://alarm-clock-murex.vercel.app/",
@@ -324,7 +332,7 @@
       "desc": "There is a digital clock that shows the current time along with alarm option. Users can select a time and set alarm for any time, whether AM or PM."
     },
     {
-      "id": "mp6",
+      "id": "mp7",
       "title": "Flip a coin",
       "thumbnail": "https://i.ibb.co/Mp7c4w3/flip-a-coin.png",
       "demo": "https://flip-a-coin-3d.vercel.app/",

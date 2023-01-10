@@ -66,7 +66,7 @@ const Concepts = () => {
   return (
     <JSProjectsWrapper id="miniJsProjects">
       <PageHeader>Mini Js Projects</PageHeader>
-      <Grid collapseHeight="1000px" showAll={showAll}>
+      <Grid collapseHeight="950px" showAll={showAll}>
         {data.JSProjects.map((node) => {
           return <Card key={node.id} node={node} />;
         })}
