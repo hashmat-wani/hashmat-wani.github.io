@@ -45,7 +45,6 @@ export const ProjectDetail = styled.div`
       min-height: 250px;
 
       ul {
-        /* border: 1px solid red; */
         list-style: disc;
         padding: 0 20px;
         line-height: 150%;

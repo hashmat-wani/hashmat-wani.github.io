@@ -71,11 +71,7 @@ const Projects = () => {
                         title={tech.title}
                         key={idx}
                       >
-                        {node.id === 4 ? (
-                          <div className="techstack_tags">{tech.title}</div>
-                        ) : (
-                          <FontAwesomeIcon icon={["fab", `${tech.icon}`]} />
-                        )}
+                        <div className="techstack_tags">{tech.title}</div>
                       </a>
                     ))}
                   </Tags>

@@ -141,6 +141,48 @@
   "projects": [
     {
       "id": 1,
+      "title": "Nobita Chatbot",
+      "desc": "Nobita(chatbot) is a ChatGPT playground that interacts in a conversational way. In this application:",
+      "bulletPoints": [
+        "While generating the response, the User can stop the response. And then it can be regenerated again with the same button.",
+        "User can also copy the response after its generated.",
+        "Speech Recognition is implemented in the app.",
+        "User can toggle between Dark and light mode theme.",
+        "User can change the Model/Engine, Temperature, or Maximum Length to get different responses:",
+        "Model: The model parameter controls the engine used to generate the response. text-davinci-003 produces the best results.",
+        "Temperature: Higher values means the model will take more risks. Try 0.9 for more creative answers, and 0 for ones with a well-defined response. We generally recommend 0",
+        "MaximumLength: The maximum number of tokens to generate. The exact limit varies by model. 1 token is roughly 4 characters for normal English text"
+      ],
+      "techstack": [
+        {
+          "title": "HTML5",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+        },
+        {
+          "title": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "title": "JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        { "title": "React", "url": "https://reactjs.org/" },
+        { "title": "Node.js", "url": "https://nodejs.org/en/" },
+        { "title": "Express.js", "url": "https://expressjs.com/" },
+        {
+          "title": "MUI",
+          "url": "https://mui.com/"
+        }
+      ],
+      "demo": "https://nobita-chatbot.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/Nobita-chatbot",
+      "iframe": "https://nobita-chatbot.vercel.app/",
+      "liveVideo": false,
+      "otherCreators_id": null,
+      "duration": "Jan 2023"
+    },
+    {
+      "id": 2,
       "title": "Weather App",
       "desc": "Weather App that displays the weather wherever the user happened to be. I implemented the following user stories:",
       "bulletPoints": [
@@ -181,7 +223,7 @@
       "duration": "Mar 2022"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Kohl's Clone - Ecommerce",
       "desc": "A collaborative project (Kohl's Clone - American department store) built by team of 4 members in 5 days. It is fully functional from the users signing in using their email and password, adding items to the basket, checking their basket, removing items if needed, and proceeding to checkout.",
       "bulletPoints": [
@@ -217,7 +259,7 @@
       "duration": "Jan 2022"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "GetCV - Resumonk Clone",
       "desc": "This was my first web-based project in my final semester of college. During my project work, I learned things like HTML, CSS, Bootstrap, and JavaScript. It was a great experience making a clone of Resumonk.",
       "techstack": [
@@ -255,7 +297,7 @@
       "duration": "Apr 2020 - May 2020"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "SPM - Semester Process Management",
       "desc": "This is a standalone system designed to automate/reduce the effort and time of maintaining/retrieving data stored by using files and registers in the CSA Department of our college. The record of every student, course, and teacher was handled manually and there was no use of any computer.\nThis project contains mainly the following sections:",
       "techstack": [
