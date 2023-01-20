@@ -193,23 +193,11 @@
         "The backend of the app is powered by Strapi, an open-source headless content management system, which allows us to easily manage and update our product catalog"
       ],
       "techstack": [
-        {
-          "title": "React",
-          "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
-        },
-        {
-          "title": "CSS",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-        },
-        {
-          "title": "JavaScript",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-        },
         { "title": "React", "url": "https://reactjs.org/" },
         { "title": "Redux", "url": "https://redux.js.org/" },
         { "title": "MUI", "url": "https://mui.com/" },
         { "title": "Stripe", "url": "https://stripe.com/en-in" },
-        { "title": "Strapi", "url": "https://nodejs.org/en/" }
+        { "title": "Strapi", "url": "https://strapi.io/" }
       ],
       "demo": "https://ecommerce-strapi1.vercel.app/",
       "github": "https://github.com/hashmat-noorani/ecommerce",
