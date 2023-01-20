@@ -183,6 +183,43 @@
     },
     {
       "id": 2,
+      "title": "Ecommerce",
+      "desc": "This app is designed to give you a full e-commerce experience with all the bells and whistles.\nTo get started, simply navigate to the homepage and browse through the collection of products. You can add items to your cart and proceed to checkout where you can enter your shipping and payment information. It accepts all major credit and debit cards through Stripe.\nOverall, this e-commerce app is designed to provide a fast and secure shopping experience for users, making it easy for them to purchase products with ease.\nIt's is built using:",
+      "bulletPoints": [
+        "React for the front-end",
+        "Redux for state management, which allows for efficient and centralized management of the app's state.",
+        "Material UI (mui) for the design and styling of the app, which provides a sleek and modern design that is easy to navigate",
+        "Stripe for secure and convenient payment processing.",
+        "The backend of the app is powered by Strapi, an open-source headless content management system, which allows us to easily manage and update our product catalog"
+      ],
+      "techstack": [
+        {
+          "title": "React",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+        },
+        {
+          "title": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "title": "JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        { "title": "React", "url": "https://reactjs.org/" },
+        { "title": "Redux", "url": "https://redux.js.org/" },
+        { "title": "MUI", "url": "https://mui.com/" },
+        { "title": "Stripe", "url": "https://stripe.com/en-in" },
+        { "title": "Strapi", "url": "https://nodejs.org/en/" }
+      ],
+      "demo": "https://ecommerce-strapi1.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/ecommerce",
+      "iframe": "https://ecommerce-strapi1.vercel.app/",
+      "liveVideo": false,
+      "otherCreators_id": null,
+      "duration": "Dec 2022"
+    },
+    {
+      "id": 3,
       "title": "Weather App",
       "desc": "Weather App that displays the weather wherever the user happened to be. I implemented the following user stories:",
       "bulletPoints": [
@@ -223,7 +260,7 @@
       "duration": "Mar 2022"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Kohl's Clone - Ecommerce",
       "desc": "A collaborative project (Kohl's Clone - American department store) built by team of 4 members in 5 days. It is fully functional from the users signing in using their email and password, adding items to the basket, checking their basket, removing items if needed, and proceeding to checkout.",
       "bulletPoints": [
@@ -259,7 +296,7 @@
       "duration": "Jan 2022"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "GetCV - Resumonk Clone",
       "desc": "This was my first web-based project in my final semester of college. During my project work, I learned things like HTML, CSS, Bootstrap, and JavaScript. It was a great experience making a clone of Resumonk.",
       "techstack": [
@@ -297,7 +334,7 @@
       "duration": "Apr 2020 - May 2020"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "SPM - Semester Process Management",
       "desc": "This is a standalone system designed to automate/reduce the effort and time of maintaining/retrieving data stored by using files and registers in the CSA Department of our college. The record of every student, course, and teacher was handled manually and there was no use of any computer.\nThis project contains mainly the following sections:",
       "techstack": [
