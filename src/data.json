@@ -199,9 +199,9 @@
         { "title": "Stripe", "url": "https://stripe.com/en-in" },
         { "title": "Strapi", "url": "https://strapi.io/" }
       ],
-      "demo": "https://ecommerce-strapi1.vercel.app/",
+      "demo": "https://ecommerce--strapi.vercel.app/",
       "github": "https://github.com/hashmat-noorani/ecommerce",
-      "iframe": "https://ecommerce-strapi1.vercel.app/",
+      "iframe": "https://ecommerce--strapi.vercel.app/",
       "liveVideo": false,
       "otherCreators_id": null,
       "duration": "Dec 2022"
