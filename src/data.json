@@ -2,6 +2,15 @@
   "certifications": [
     {
       "id": 1,
+      "title": "Meta Front-End Developer Specialization (9-course program)",
+      "issuing_organization": "Coursera",
+      "issue_date": "Feb 2023",
+      "expiration_date": null,
+      "credential_id": "W7R5WHZJEN3L",
+      "credential_link": "https://www.coursera.org/account/accomplishments/professional-cert/W7R5WHZJEN3L"
+    },
+    {
+      "id": 2,
       "title": "JavaScript Algorithms and Data Structures",
       "issuing_organization": "freeCodeCamp",
       "issue_date": "Aug 2022",
@@ -10,7 +19,7 @@
       "credential_link": "https://www.freecodecamp.org/certification/HashmatNoorani/javascript-algorithms-and-data-structures"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Responsive Web Design",
       "issuing_organization": "freeCodeCamp",
       "issue_date": "Aug 2022",
@@ -19,7 +28,7 @@
       "credential_link": "https://www.freecodecamp.org/certification/HashmatNoorani/responsive-web-design"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Front End Development Libraries",
       "issuing_organization": "freeCodeCamp",
       "issue_date": "Sep 2022",
@@ -28,7 +37,7 @@
       "credential_link": "https://www.freecodecamp.org/certification/HashmatNoorani/front-end-development-libraries"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Back End Development and APIs",
       "issuing_organization": "freeCodeCamp",
       "issue_date": "Apr 2022",
@@ -37,7 +46,7 @@
       "credential_link": "https://www.freecodecamp.org/certification/HashmatNoorani/back-end-development-and-apis"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "CSS",
       "issuing_organization": "HackerRank",
       "issue_date": "Mar 2022",
@@ -46,7 +55,7 @@
       "credential_link": "https://www.hackerrank.com/certificates/6bd437bb5d15"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Certificate in Advance Excel",
       "issuing_organization": "Amity University",
       "issue_date": "Jan 2021",
@@ -55,7 +64,7 @@
       "credential_link": "https://onedrive.live.com/?authkey=%21ABILLS5Q24rdSzg&cid=5AE15EB40FBD5964&id=5AE15EB40FBD5964%216682&parId=5AE15EB40FBD5964%214526&o=OneUp"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Certificate in Professional and Life Skills",
       "issuing_organization": "Amity University",
       "issue_date": "Jan 2021",
@@ -64,7 +73,7 @@
       "credential_link": "https://onedrive.live.com/?cid=5ae15eb40fbd5964&id=5AE15EB40FBD5964%216682&ithint=file%2Cpdf&authkey=%21ABILLS5Q24rdSzg"
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Cyber Security Foundation Professional Certificate - CSFPC™",
       "issuing_organization": "CertiProf",
       "issue_date": "Jan 2021",
@@ -73,7 +82,7 @@
       "credential_link": "https://www.youracclaim.com/badges/9d1b66ad-ab4c-4e28-ad99-c40e1fead091?source=linked_in_profile"
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "Lifelong Learning",
       "issuing_organization": "CertiProf",
       "issue_date": "Jan 2021",
