@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Typewriter from "typewriter-effect";
 import problemsolving from "../../static/problem-solving.png";
 import leetcode from "../../static/leetcode.svg";
+import resume from "../../static/resume.pdf";
 
 const ThingsILove = () => (
   <Flex justify="space-between" align="center">
@@ -73,11 +74,17 @@ const Home = () => {
 
           <div className="home__CTA">
             <Button
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1S9ENhZDQJv1Yt65Z6_jJoJwcu1LXULRx/view?usp=share_link"
+                )
+              }
               target="_blank"
               rel="noreferrer"
               className="cta"
               as="a"
-              href="https://drive.google.com/file/d/1S7qewIEfCn5u71U-3wubPM9xEWxbpsGw/view?usp=sharing"
+              href={resume}
+              download="fw15_166-Hashmat_Noorani-Resume"
             >
               Download Resume
             </Button>

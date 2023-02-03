@@ -110,7 +110,7 @@
       "company_id": "c1",
       "currently_working": true,
       "start_date": [4, 2022],
-      "end_date": false,
+      "end_date": [2, 2023],
       "desc": "Roles & Responsibilities",
       "bulletPoints": [
         "Taking live Coding & DSA curriculum doubt sessions of students on zoom",
