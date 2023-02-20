@@ -149,6 +149,69 @@
   "projects": [
     {
       "id": 1,
+      "title": "AI-Image-Generator-DALL.E",
+      "desc": "This is a web application that generates original, realistic images and art from a short text description and allows users to download, share, or save them in their collections. It uses OpenAI APIs to generate the images and various technologies for implementation. The project comes with the following features:",
+      "bulletPoints": [
+        "Generating Images with OpenAI APIs and Sharing Options.",
+        "Storing Images with Cloudinary.",
+        "Creating and Editing Collections.",
+        "Infinite Scrolling for User Posts.",
+        "User Registration and Login",
+        "Facebook and Google Authentication",
+        "OTP Verification for Email Verification",
+        "Changing User Profile Picture with Cloudinary",
+        "Refresh Tokens with Axios Interceptors and Cookies",
+        "Logout Feature with Redis",
+        "Reset Password Feature",
+        "Deactivating User Accounts",
+        "Deleting User Accounts"
+      ],
+      "techstack": [
+        {
+          "title": "HTML5",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+        },
+        {
+          "title": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "title": "JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        { "title": "React", "url": "https://reactjs.org/" },
+        { "title": "Redux", "url": "https://redux.js.org/" },
+        { "title": "Formik", "url": "https://formik.org/" },
+        { "title": "Yup", "url": "https://github.com/jquense/yup" },
+        {
+          "title": "MUI",
+          "url": "https://mui.com/"
+        },
+        { "title": "Node.js", "url": "https://nodejs.org/en/" },
+        { "title": "Express.js", "url": "https://expressjs.com/" },
+        { "title": "MongoDB", "url": "https://www.mongodb.com/" },
+        { "title": "mongoose", "url": "https://mongoosejs.com/" },
+        { "title": "Joi", "url": "https://joi.dev/api/" },
+        { "title": "Nodemailer", "url": "https://nodemailer.com/about/" },
+        { "title": "JWT", "url": "https://jwt.io/" },
+        {
+          "title": "OAuth",
+          "url": "https://www.passportjs.org/concepts/authentication/oauth/"
+        },
+        { "title": "Redis", "url": "https://redis.io/" },
+        { "title": "multer", "url": "https://www.npmjs.com/package/multer" },
+        { "title": "Cloudinary", "url": "https://cloudinary.com/" },
+        { "title": "Bcrypt", "url": "https://bcrypt-generator.com/" }
+      ],
+      "demo": "https://ai-img-generatorr.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/AI-Image-Generator-DALL.E",
+      "iframe": "https://ai-img-generatorr.vercel.app/",
+      "liveVideo": false,
+      "otherCreators_id": null,
+      "duration": "Feb 2023"
+    },
+    {
+      "id": 2,
       "title": "Nobita Chatbot",
       "desc": "Nobita(chatbot) is a ChatGPT playground that interacts in a conversational way. In this application:",
       "bulletPoints": [
@@ -190,7 +253,7 @@
       "duration": "Jan 2023"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Ecommerce",
       "desc": "This app is designed to give you a full e-commerce experience with all the bells and whistles.\nTo get started, simply navigate to the homepage and browse through the collection of products. You can add items to your cart and proceed to checkout where you can enter your shipping and payment information. It accepts all major credit and debit cards through Stripe.\nOverall, this e-commerce app is designed to provide a fast and secure shopping experience for users, making it easy for them to purchase products with ease.\nIt's is built using:",
       "bulletPoints": [
@@ -215,7 +278,7 @@
       "duration": "Dec 2022"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Weather App",
       "desc": "Weather App that displays the weather wherever the user happened to be. I implemented the following user stories:",
       "bulletPoints": [
@@ -256,7 +319,7 @@
       "duration": "Mar 2022"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Kohl's Clone - Ecommerce",
       "desc": "A collaborative project (Kohl's Clone - American department store) built by team of 4 members in 5 days. It is fully functional from the users signing in using their email and password, adding items to the basket, checking their basket, removing items if needed, and proceeding to checkout.",
       "bulletPoints": [
@@ -292,7 +355,7 @@
       "duration": "Jan 2022"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "GetCV - Resumonk Clone",
       "desc": "This was my first web-based project in my final semester of college. During my project work, I learned things like HTML, CSS, Bootstrap, and JavaScript. It was a great experience making a clone of Resumonk.",
       "techstack": [
@@ -330,7 +393,7 @@
       "duration": "Apr 2020 - May 2020"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "SPM - Semester Process Management",
       "desc": "This is a standalone system designed to automate/reduce the effort and time of maintaining/retrieving data stored by using files and registers in the CSA Department of our college. The record of every student, course, and teacher was handled manually and there was no use of any computer.\nThis project contains mainly the following sections:",
       "techstack": [
