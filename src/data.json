@@ -208,7 +208,8 @@
       "iframe": "https://ai-img-generatorr.vercel.app/",
       "liveVideo": false,
       "otherCreators_id": null,
-      "duration": "Feb 2023"
+      "duration": "Feb 2023",
+      "readme": "https://github.com/hashmat-noorani/AI-Image-Generator-DALL.E/blob/main/README.md"
     },
     {
       "id": 2,
@@ -250,7 +251,8 @@
       "iframe": "https://nobita-chatbot.vercel.app/",
       "liveVideo": false,
       "otherCreators_id": null,
-      "duration": "Jan 2023"
+      "duration": "Jan 2023",
+      "readme": "https://github.com/hashmat-noorani/Nobita-chatbot/blob/main/README.md"
     },
     {
       "id": 3,
@@ -275,10 +277,43 @@
       "iframe": "https://ecommerce--strapi.vercel.app/",
       "liveVideo": false,
       "otherCreators_id": null,
-      "duration": "Dec 2022"
+      "duration": "Dec 2022",
+      "readme": "https://github.com/hashmat-noorani/ecommerce/blob/main/README.md"
     },
     {
       "id": 4,
+      "title": "Amazon clone",
+      "desc": "This is an Amazon clone web application built using React and Styled Components, with Firebase as the backend.",
+      "techstack": [
+        {
+          "title": "HTML5",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+        },
+        {
+          "title": "CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "title": "JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        { "title": "React", "url": "https://reactjs.org/" },
+        { "title": "Firebase", "url": "https://firebase.google.com/" },
+        {
+          "title": "styled-components",
+          "url": "https://styled-components.com/"
+        }
+      ],
+      "demo": "https://amazonn-clone.vercel.app/",
+      "github": "https://github.com/hashmat-noorani/Amazon-clone",
+      "iframe": "https://amazonn-clone.vercel.app/",
+      "liveVideo": false,
+      "otherCreators_id": null,
+      "duration": "Aug 2022",
+      "readme": "https://github.com/hashmat-noorani/Amazon-clone/blob/main/README.md"
+    },
+    {
+      "id": 5,
       "title": "Weather App",
       "desc": "Weather App that displays the weather wherever the user happened to be. I implemented the following user stories:",
       "bulletPoints": [
@@ -316,10 +351,11 @@
       "iframe": "https://hashmat-noorani.github.io/Weather-App/",
       "liveVideo": false,
       "otherCreators_id": null,
-      "duration": "Mar 2022"
+      "duration": "Mar 2022",
+      "readme": "https://github.com/hashmat-noorani/Weather-App/blob/main/README.md"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Kohl's Clone - Ecommerce",
       "desc": "A collaborative project (Kohl's Clone - American department store) built by team of 4 members in 5 days. It is fully functional from the users signing in using their email and password, adding items to the basket, checking their basket, removing items if needed, and proceeding to checkout.",
       "bulletPoints": [
@@ -352,10 +388,11 @@
       "iframe": "https://hashmat-noorani.github.io/Kohl-s/",
       "liveVideo": false,
       "otherCreators_id": ["97455128", "94161952", "94235431"],
-      "duration": "Jan 2022"
+      "duration": "Jan 2022",
+      "readme": "https://github.com/hashmat-noorani/Kohl-s/blob/main/README.md"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "GetCV - Resumonk Clone",
       "desc": "This was my first web-based project in my final semester of college. During my project work, I learned things like HTML, CSS, Bootstrap, and JavaScript. It was a great experience making a clone of Resumonk.",
       "techstack": [
@@ -390,10 +427,11 @@
       "iframe": "https://hashmat-noorani.github.io/getCV-Resumonk-Clone/",
       "liveVideo": false,
       "otherCreators_id": null,
-      "duration": "Apr 2020 - May 2020"
+      "duration": "Apr 2020 - May 2020",
+      "readme": "https://github.com/hashmat-noorani/getCV-Resumonk-Clone/blob/main/README.md"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "SPM - Semester Process Management",
       "desc": "This is a standalone system designed to automate/reduce the effort and time of maintaining/retrieving data stored by using files and registers in the CSA Department of our college. The record of every student, course, and teacher was handled manually and there was no use of any computer.\nThis project contains mainly the following sections:",
       "techstack": [
@@ -416,7 +454,8 @@
       "iframe": "https://drive.google.com/file/d/1RJ7dIVhdBPgxY2q0E7lAgz2XwBOyeEaR/preview",
       "liveVideo": false,
       "otherCreators_id": null,
-      "duration": "Jun 2019 - Sep 2019"
+      "duration": "Jun 2019 - Sep 2019",
+      "readme": "https://github.com/hashmat-noorani/SPM/blob/main/README.md"
     }
   ],
 

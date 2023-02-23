@@ -24,6 +24,26 @@ function Contact() {
           <FontAwesomeIcon size={"5x"} icon="handshake" />
           <h3>Thank You</h3>
           <p>Do You Have Any Queries?</p>
+          <div className="contact">
+            <div>
+              <FontAwesomeIcon icon="location-dot" />
+              <p>Baramulla, Jammu and Kashmir</p>
+            </div>
+            <div>
+              <FontAwesomeIcon icon="envelope" />
+              <p>
+                <a href="mailto: hashmatwani@icloud.com">
+                  hashmatwani@icloud.com
+                </a>
+              </p>
+            </div>
+            <div>
+              <FontAwesomeIcon icon="phone" />
+              <p>
+                <a href="tel:7006600835">7006600835</a>
+              </p>
+            </div>
+          </div>
         </LeftContent>
         <ContactForm
           noValidate

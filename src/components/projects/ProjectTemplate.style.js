@@ -52,6 +52,13 @@ export const ProjectDetail = styled.div`
         color: ${(p) => p.theme.primaryText};
       }
     }
+
+    .more {
+      text-align: right;
+      line-height: 100%;
+      margin-top: -10px;
+      font-size: 13px;
+    }
   }
 
   @media ${(props) => props.theme.media.fablet} {

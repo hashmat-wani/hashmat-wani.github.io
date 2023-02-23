@@ -24,6 +24,7 @@ import {
   faEnvelope,
   faPhone,
   faWindowMaximize,
+  faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -46,7 +47,8 @@ library.add(
   faEdit,
   faEnvelope,
   faPhone,
-  faWindowMaximize
+  faWindowMaximize,
+  faLocationDot
 );
 
 config.autoAddCss = false;

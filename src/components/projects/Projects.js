@@ -39,6 +39,7 @@ const Projects = () => {
               bulletPoints={node.bulletPoints || null}
               otherCreators_id={node.otherCreators_id}
               duration={node.duration}
+              readme={node.readme}
               links={
                 <ProjectLinks>
                   {node.demo && (

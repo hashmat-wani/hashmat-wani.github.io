@@ -18,6 +18,7 @@ const ProjectTemplate = ({
   otherCreators_id,
   links,
   preview,
+  readme,
 }) => {
   const [creators, setCreators] = useState([]);
 
@@ -58,7 +59,13 @@ const ProjectTemplate = ({
                   ))}
                 </ul>
               )}
+              <div class="more">
+                <a target="_blank" href={readme}>
+                  ...see more
+                </a>
+              </div>
             </div>
+
             {creators.length !== 0 && (
               <div className="other_creators">
                 <h5>Other creators</h5>
@@ -79,6 +86,7 @@ const ProjectTemplate = ({
                 ))}
               </div>
             )}
+
             {links}
           </div>
         </ProjectDetail>
