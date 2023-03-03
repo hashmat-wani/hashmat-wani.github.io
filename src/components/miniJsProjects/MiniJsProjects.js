@@ -39,11 +39,13 @@ const Card = React.memo(({ node }) => (
         <p>{node.desc}</p>
       </div>
       <div style={{ textAlign: "right" }}>
-        <IconButton
-          label={`Live Demo - ${node.title}`}
-          href={node.demo}
-          icon="window-maximize"
-        />
+        {node.demo && (
+          <IconButton
+            label={`Live Demo - ${node.title}`}
+            href={node.demo}
+            icon="window-maximize"
+          />
+        )}
         <IconButton
           label={`Source Code - ${node.title}`}
           href={node.github}
