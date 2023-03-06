@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5241a21c.css",
-    "main.js": "/static/js/main.4bc72c5d.js",
+    "main.js": "/static/js/main.c6f2da98.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/avatar.jpg": "/static/media/avatar.1c540e9af5fedb1ea67d.jpg",
     "static/media/fw15-166-Hashmat-Noorani-Resume.pdf": "/static/media/fw15-166-Hashmat-Noorani-Resume.f60cfef6adbb3aa48698.pdf",
@@ -16,11 +16,11 @@
     "index.html": "/index.html",
     "static/media/home_rect.svg": "/static/media/home_rect.468ad2cfc9ecc3d8d401fa538476d31c.svg",
     "main.5241a21c.css.map": "/static/css/main.5241a21c.css.map",
-    "main.4bc72c5d.js.map": "/static/js/main.4bc72c5d.js.map",
+    "main.c6f2da98.js.map": "/static/js/main.c6f2da98.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5241a21c.css",
-    "static/js/main.4bc72c5d.js"
+    "static/js/main.c6f2da98.js"
   ]
 }
