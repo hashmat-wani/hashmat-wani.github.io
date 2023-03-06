@@ -59,7 +59,7 @@ const ProjectTemplate = ({
                   ))}
                 </ul>
               )}
-              <div class="more">
+              <div className="more">
                 <a target="_blank" href={readme}>
                   ...see more
                 </a>
