@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Typewriter from "typewriter-effect";
 import problemsolving from "../../static/problem-solving.png";
 import leetcode from "../../static/leetcode.svg";
-import resume from "../../static/fw15-166-Hashmat-Noorani-Resume.pdf";
+import resume from "../../static/fw15_166-Hashmat-Noorani-Resume.pdf";
 
 const ThingsILove = () => (
   <Flex justify="space-between" align="center">
