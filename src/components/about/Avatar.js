@@ -2,15 +2,15 @@ import PropTypes from "prop-types";
 
 import styled from "styled-components";
 
-// import avatar from "../../static/avatar.png";
-import avatar from "../../static/avatar.jpg";
+import avatar from "../../static/avatar1.png";
+// import avatar from "../../static/avatar.jpg";
 
 const AvatarWrapper = styled.div`
   width: 240px;
-  height: 250px;
+  height: 240px;
   margin: 0;
   img {
-    /* animation: tiltImage 2s linear infinite; */
+    animation: tiltImage 2s linear infinite;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;

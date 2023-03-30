@@ -27,8 +27,7 @@ export const CompanyDetails = styled.div`
   display: flex;
   gap: 10px;
   /* border: 1px solid red; */
-  & h3,
-  h4,
+  & h4,
   p {
     margin: 3px 0;
   }
@@ -93,6 +92,9 @@ export const Experiences = styled.div``;
 
 export const Heading = styled.div`
   margin-bottom: 9px;
+  h3 {
+    margin: 0;
+  }
 `;
 export const Details = styled.div`
   /* border: 1px solid red; */

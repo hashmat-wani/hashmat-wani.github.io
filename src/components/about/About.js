@@ -26,8 +26,7 @@ const About = () => {
           Fetch and utilizing various React tools and libraries such as Redux,
           React Router, and Material UI. As someone who is passionate about
           coding, I am always seeking ways to improve my skills and apply them
-          to real-world projects. I am currently seeking a challenging role in a
-          product-based company to further enhance my technical knowledge.
+          to real-world projects.
         </p>
       </AboutInfo>
       <div className="education__wrapper">

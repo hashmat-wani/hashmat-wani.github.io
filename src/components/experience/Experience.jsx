@@ -148,7 +148,7 @@ const Experience = () => {
   return (
     <ExperienceWrapper id="experience">
       <PageHeader>Experience</PageHeader>
-      <ShowAllContainer collapseHeight="700px" showAll={showAll}>
+      <ShowAllContainer collapseHeight="650px" showAll={showAll}>
         <ExperienceDetails>
           {companies.map((comp, index) => (
             <CompanyDetails key={comp.id}>
