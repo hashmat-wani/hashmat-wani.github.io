@@ -121,5 +121,7 @@ export const Details = styled.div`
 
 export const Logo = styled.div`
   padding-top: 3px;
+  width: 46px;
+  height: 46px;
   /* border: 1px solid blue; */
 `;

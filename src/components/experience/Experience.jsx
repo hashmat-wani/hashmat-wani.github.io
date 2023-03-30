@@ -50,22 +50,22 @@ const Experience = () => {
   const currYear = date.getFullYear();
   experiences.forEach((exp) => {
     if (
-      exp.start_date[0] === exp.end_date[0] &&
-      exp.start_date[1] === exp.end_date[1]
+      exp?.start_date[0] === exp?.end_date[0] &&
+      exp?.start_date[1] === exp?.end_date[1]
     ) {
-      exp.duration = `${monthNames[exp.start_date[0]]} ${
-        exp.start_date[1]
+      exp.duration = `${monthNames[exp?.start_date[0]]} ${
+        exp?.start_date[1]
       } · 1 mo`;
     } else {
       let total_mos = 0;
-      if (exp.end_date) {
+      if (exp?.end_date) {
         total_mos =
-          (exp.end_date[1] - exp.start_date[1]) * 12 +
-          (exp.end_date[0] - exp.start_date[0] + 1);
+          (exp?.end_date[1] - exp?.start_date[1]) * 12 +
+          (exp?.end_date[0] - exp?.start_date[0] + 1);
       } else {
         total_mos =
-          (currYear - exp.start_date[1]) * 12 +
-          (currMonth - exp.start_date[0] + 1);
+          (currYear - exp?.start_date[1]) * 12 +
+          (currMonth - exp?.start_date[0] + 1);
       }
 
       const company = companies.find((comp) => comp.id === exp.company_id);
@@ -74,9 +74,11 @@ const Experience = () => {
       const yrs = Math.floor(total_mos / 12);
       const mos = total_mos % 12;
 
-      exp.duration = `${monthNames[exp.start_date[0]]} ${exp.start_date[1]} - ${
-        exp.end_date
-          ? `${monthNames[exp.end_date[0]]} ${exp.end_date[1]} `
+      exp.duration = `${monthNames[exp?.start_date[0]]} ${
+        exp?.start_date[1]
+      } - ${
+        exp?.end_date
+          ? `${monthNames[exp?.end_date[0]]} ${exp?.end_date[1]} `
           : "Present"
       } · ${yrs === 1 ? `${yrs} yr` : yrs > 1 ? `${yrs} yrs` : ""}
       ${mos === 1 ? `${mos} mo` : mos > 1 ? `${mos} mos` : ""}`;
@@ -160,7 +162,9 @@ const Experience = () => {
                         </Logo>
                       ) : (
                         <>
-                          <div className="side_bullet"></div>
+                          {expLeftDivCount[index].length > 2 && (
+                            <div className="side_bullet"></div>
+                          )}
                           {idx < expLeftDivCount[index].length - 1 && (
                             <div
                               className="side_vertical_line"
@@ -172,65 +176,115 @@ const Experience = () => {
                     </div>
                   ))}
               </Left>
-
-              <Right ref={(el) => (ref.current[index] = el)}>
-                <Company>
-                  <Heading>
-                    <h3>{comp.name}</h3>
-                    {comp.duration && <p>{comp.duration}</p>}
-                    <p>{comp.location}</p>
-                  </Heading>
-                  <Details>
-                    <p>{comp.desc}</p>
-                  </Details>
-                </Company>
-                {experiences
-                  .filter((expp) => expp.company_id === comp.id)
-                  .map((exp, i) => (
-                    <Experiences key={exp.id}>
-                      <Heading>
-                        <h4>{exp.title}</h4>
-                        <p>{exp.employment_type}</p>
-                        <p>{exp.duration}</p>
-                      </Heading>
-                      <Details>
-                        <div>
-                          <div className={`details line-clamp`}>
-                            <p>{exp.desc}</p>
-                            {exp.bulletPoints && (
-                              <ul>
-                                {exp.bulletPoints &&
-                                  exp.bulletPoints.map((pt, i) => (
-                                    <li key={i}>{pt}</li>
-                                  ))}
-                              </ul>
-                            )}
+              {experiences.filter((expp) => expp.company_id === comp.id)
+                .length > 1 ? (
+                <Right ref={(el) => (ref.current[index] = el)}>
+                  <Company>
+                    <Heading>
+                      <h3>{comp.name}</h3>
+                      {comp.duration && <p>{comp.duration}</p>}
+                      <p>{`${comp?.location} · ${comp?.location_type}`}</p>
+                    </Heading>
+                    <Details>{comp?.desc && <p>{comp.desc}</p>}</Details>
+                  </Company>
+                  {experiences
+                    .filter((expp) => expp.company_id === comp.id)
+                    .map((exp, i) => (
+                      <Experiences key={exp.id}>
+                        <Heading>
+                          <h4>{exp.title}</h4>
+                          <p>{exp.employment_type}</p>
+                          <p>{exp.duration}</p>
+                        </Heading>
+                        <Details>
+                          <div>
+                            <div className={`details line-clamp ${comp.id}`}>
+                              {exp?.desc && <p>{exp.desc}</p>}
+                              {exp?.bulletPoints && (
+                                <ul>
+                                  {exp.bulletPoints &&
+                                    exp.bulletPoints.map((pt, i) => (
+                                      <li key={i}>{pt}</li>
+                                    ))}
+                                </ul>
+                              )}
+                            </div>
+                            <button
+                              className={`toggle ${comp.id}`}
+                              onClick={() => {
+                                setToggle(!toggle);
+                                document
+                                  .querySelectorAll(`.details.${comp.id}`)
+                                  [i].classList.remove(`line-clamp`);
+                                document.querySelectorAll(`.toggle.${comp.id}`)[
+                                  i
+                                ].style.display = "none";
+                              }}
+                            >
+                              ...see more
+                            </button>
                           </div>
-                          <button
-                            className="toggle"
-                            onClick={() => {
-                              setToggle(!toggle);
-                              document
-                                .querySelectorAll(".details")
-                                [i].classList.remove(`line-clamp`);
-                              document.querySelectorAll(".toggle")[
-                                i
-                              ].style.display = "none";
-                            }}
-                          >
-                            ...see more
-                          </button>
-                        </div>
-                        {exp.skills && (
-                          <p>
-                            <b>skills: </b>
-                            {exp.skills}
-                          </p>
-                        )}
-                      </Details>
-                    </Experiences>
-                  ))}
-              </Right>
+                          {exp.skills && (
+                            <p>
+                              <b>Skills: </b>
+                              {exp.skills}
+                            </p>
+                          )}
+                        </Details>
+                      </Experiences>
+                    ))}
+                </Right>
+              ) : (
+                <Right ref={(el) => (ref.current[index] = el)}>
+                  {experiences
+                    .filter((expp) => expp.company_id === comp.id)
+                    .map((exp, i) => (
+                      <Experiences key={exp.id}>
+                        <Heading>
+                          <h3>{exp.title}</h3>
+                          <p>{`${comp.name} · ${exp.employment_type}`}</p>
+                          <p>{exp.duration}</p>
+                          <p>{`${comp.location} · ${comp.location_type}`}</p>
+                        </Heading>
+                        <Details>
+                          <div>
+                            <div className={`details line-clamp ${comp.id}`}>
+                              {exp?.desc && <p>{exp.desc}</p>}
+                              {exp?.bulletPoints && (
+                                <ul>
+                                  {exp.bulletPoints &&
+                                    exp.bulletPoints.map((pt, i) => (
+                                      <li key={i}>{pt}</li>
+                                    ))}
+                                </ul>
+                              )}
+                            </div>
+                            <button
+                              className={`toggle ${comp.id}`}
+                              onClick={() => {
+                                setToggle(!toggle);
+                                document
+                                  .querySelectorAll(`.details.${comp.id}`)
+                                  [i].classList.remove(`line-clamp`);
+                                document.querySelectorAll(`.toggle.${comp.id}`)[
+                                  i
+                                ].style.display = "none";
+                              }}
+                            >
+                              ...see more
+                            </button>
+                          </div>
+                          {exp.skills && (
+                            <p>
+                              <b>Skills: </b>
+                              {exp.skills}
+                            </p>
+                          )}
+                        </Details>
+                      </Experiences>
+                    ))}
+                </Right>
+              )}
             </CompanyDetails>
           ))}
         </ExperienceDetails>

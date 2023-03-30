@@ -94,9 +94,18 @@
 
   "companies": [
     {
+      "id": "c2",
+      "name": "Attentive.ai",
+      "location": "Noida, Uttar Pradesh, India",
+      "location_type": "Hybrid",
+      "desc": "Attentive.ai is the #1 landscape management software provider with end-to-end automation for all outdoor services business needs across landscape maintenance, construction, asphalt and paving maintenance, facilities maintenance, and snow removal.",
+      "logo": "https://media.licdn.com/dms/image/C4D0BAQEg8pBn6aiazg/company-logo_100_100/0/1672898001185?e=1687996800&v=beta&t=5HeYNrO-XrusgYO-wJxb7OEuzhpTQUbHyeStCHdaxww"
+    },
+    {
       "id": "c1",
       "name": "Masai School",
-      "location": "Remote",
+      "location": "Bengaluru, Karnataka, India",
+      "location_type": "Remote",
       "desc": "Masai is an outcome-driven career school whose mission is to skill India’s untapped & underutilized talent and train them for some of the most in-demand jobs in the world.",
       "logo": "https://media.licdn.com/dms/image/C560BAQHdxMHntX6Z8Q/company-logo_100_100/0/1650372038245?e=1687392000&v=beta&t=RTztxOQKV5Lnnd1_rFfk6uap5BfufmcxtzfBii2wVy4"
     }
@@ -104,11 +113,24 @@
 
   "experiences": [
     {
-      "id": "e1",
+      "id": "e3",
+      "title": "Software Engineer",
+      "employment_type": "Full-time",
+      "company_id": "c2",
+      "currently_working": true,
+      "start_date": [3, 2023],
+      "end_date": false,
+      "desc": null,
+      "bulletPoints": null,
+      "skills": ["React", " · ", "JavaScript", " · ", "TypeScript"]
+    },
+
+    {
+      "id": "e2",
       "title": "Instructional Associate",
       "employment_type": "Full-time",
       "company_id": "c1",
-      "currently_working": true,
+      "currently_working": false,
       "start_date": [4, 2022],
       "end_date": [2, 2023],
       "desc": "During my time at the company, my main responsibilities included:",
@@ -134,7 +156,7 @@
       ]
     },
     {
-      "id": "e2",
+      "id": "e1",
       "title": "Student Guide",
       "employment_type": "Part-time",
       "company_id": "c1",
