@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.5241a21c.css",
-    "main.js": "/static/js/main.6e0de93a.js",
+    "main.js": "/static/js/main.afcded9c.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/avatar.jpg": "/static/media/avatar.1c540e9af5fedb1ea67d.jpg",
+    "static/media/avatar1.png": "/static/media/avatar1.4c895da7c7fa4e219e54.png",
     "static/media/fw15_166-Hashmat-Noorani-Resume.pdf": "/static/media/fw15_166-Hashmat-Noorani-Resume.d8a6e13f605925ad16a4.pdf",
     "static/media/social-banner.jpg": "/static/media/social-banner.c15e5ce2b31912fe5431.jpg",
     "static/media/logo.svg": "/static/media/logo.e099e7e6c25e8297f1f8a087bdf89521.svg",
@@ -16,11 +16,11 @@
     "index.html": "/index.html",
     "static/media/home_rect.svg": "/static/media/home_rect.468ad2cfc9ecc3d8d401fa538476d31c.svg",
     "main.5241a21c.css.map": "/static/css/main.5241a21c.css.map",
-    "main.6e0de93a.js.map": "/static/js/main.6e0de93a.js.map",
+    "main.afcded9c.js.map": "/static/js/main.afcded9c.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5241a21c.css",
-    "static/js/main.6e0de93a.js"
+    "static/js/main.afcded9c.js"
   ]
 }
