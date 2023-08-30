@@ -46,7 +46,7 @@ export const CodeCard = () => {
       <pre>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; constructor() {"{"}</pre>
       <pre>
         3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.name = "
-        <b>Hashmat Noorani</b>";
+        <b>Hashmat Wani</b>";
       </pre>
       <pre>
         4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.traits = ["

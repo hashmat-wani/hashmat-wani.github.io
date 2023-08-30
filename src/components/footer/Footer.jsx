@@ -83,7 +83,7 @@ const Footer = () => (
   <FooterWrapper>
     <FWrapper>
       <SLink className="logo" smooth offset={-100} hashSpy={true} to="home">
-        <img src={logo} alt="Hashmat Noorani" />
+        <img src={logo} alt="Hashmat Wani" />
       </SLink>
       <p>
         Made with love and
@@ -96,11 +96,11 @@ const Footer = () => (
         </a>
         by
         <a
-          href="https://github.com/hashmat-noorani"
+          href="https://github.com/hashmat-wani"
           target="_blank"
           rel="noreferrer"
         >
-          &nbsp;hashmat-noorani
+          &nbsp;hashmat-wani
         </a>
       </p>
     </FWrapper>

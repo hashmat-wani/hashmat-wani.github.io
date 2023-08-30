@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Typewriter from "typewriter-effect";
 import problemsolving from "../../static/problem-solving.png";
 import leetcode from "../../static/leetcode.svg";
-import resume from "../../static/fw15_166-Hashmat-Noorani-Resume.pdf";
+import resume from "../../static/Hashmat_Wani-Resume.pdf";
 
 const ThingsILove = () => (
   <Flex justify="space-between" align="center">
@@ -57,7 +57,7 @@ const Home = () => {
       <Intro>
         <div className="home__text">
           <p>Hello, I’m</p>
-          <h1>HASHMAT NOORANI</h1>
+          <h1>HASHMAT WANI</h1>
           <div className="adjust">
             <Typewriter
               options={{
@@ -84,7 +84,7 @@ const Home = () => {
               className="cta"
               as="a"
               href={resume}
-              download="fw15_166-Hashmat_Noorani-Resume"
+              download="Hashmat_Wani-Resume"
             >
               Download Resume
             </Button>
@@ -93,20 +93,20 @@ const Home = () => {
               <IconLink
                 label="github"
                 icon={["fab", "github"]}
-                href="//github.com/hashmat-noorani"
+                href="//github.com/hashmat-wani"
               />
               <IconLink
                 label="linkedin"
                 icon={["fab", "linkedin-in"]}
-                href="//linkedin.com/in/hashmat-noorani"
+                href="//linkedin.com/in/hashmat-wani"
               />
               <IconLink
                 label="hackerrank"
                 icon={["fab", "hackerrank"]}
-                href="//hackerrank.com/hashmat_noorani"
+                href="//hackerrank.com/hashmat_wani"
               />
               <a
-                href="//leetcode.com/hashmat-noorani/"
+                href="//leetcode.com/hashmat-wani/"
                 target="_blank"
                 aria-label="leetcode"
                 title="leetcode"

@@ -17,10 +17,12 @@ const About = () => {
           <Avatar />
         </div>
         <p style={{ textAlign: "justify" }}>
-          Hello, I am Hashmat Noorani, a self-taught Full Stack web developer
-          with a passion for writing clean and efficient code. With 1-year of
-          experience in building single-page applications using the MERN Stack,
-          I have developed a skill set in creating reusable components and
+          Hello, I'm Hashmat Wani, a dedicated Full Stack web developer
+          currently serving as an SDE-I Frontend professional at{" "}
+          <a href="https://attentive.ai/" target="_blank">
+            Attentive.ai
+          </a>
+          . I have developed a skill set in creating reusable components and
           optimizing React application performance. Additionally, I am
           proficient in integrating APIs into React applications using Axios and
           Fetch and utilizing various React tools and libraries such as Redux,

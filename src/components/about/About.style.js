@@ -32,6 +32,10 @@ export const AboutInfo = styled.article`
 
   p {
     color: #f8f8f8;
+    a {
+      color: #f8f8f8;
+      text-decoration: underline;
+    }
   }
 
   .about__link {

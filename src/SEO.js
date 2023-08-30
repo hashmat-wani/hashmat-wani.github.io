@@ -3,10 +3,10 @@ import { Helmet } from "react-helmet";
 import socialBanner from "./static/social-banner.jpg";
 
 const SEO = () => {
-  const title = "Hashmat Noorani - Full Stack Web Developer";
-  const url = "https://hashmat-noorani.github.io/";
+  const title = "Hashmat Wani - Full Stack Web Developer";
+  const url = "https://hashmat-wani.github.io/";
   const description =
-    "Hashmat Noorani - Passionate Full Stack web developer who loves javascript and modern web technologies.";
+    "Hashmat Wani - Passionate Full Stack web developer who loves javascript and modern web technologies.";
   const ogimage = `${url}${socialBanner}`;
   const twitter = "@HashmatWani_x";
 
@@ -19,9 +19,9 @@ const SEO = () => {
       <meta name="description" content={description} />
       <meta
         name="keywords"
-        content="hashmat noorani, portfolio, hashmat, full stack dev, personal portfolio, portfolio design, portfolio website, developer, SDE, frontend, React"
+        content="hashmat wani, hashmat noorani, portfolio, hashmat, full stack dev, personal portfolio, portfolio design, portfolio website, developer, SDE, frontend, React"
       />
-      <meta name="author" content="Hashmat Noorani" />
+      <meta name="author" content="Hashmat Wani" />
       {ogimage && <meta name="image" content={ogimage} />}
       <link rel="canonical" href={url} />
 

@@ -69,7 +69,7 @@ const GithubCalendar = () => {
           <GitHubCalendar
             blockSize={13.5}
             blockMargin={7}
-            username="hashmat-noorani"
+            username="hashmat-wani"
             {...(cal === "phone"
               ? { transformData: selectLast4Months }
               : cal === "tablet"
@@ -98,7 +98,7 @@ const GithubCalendar = () => {
         <GitHubCalendar
           blockSize={13.5}
           blockMargin={7}
-          username="hashmat-noorani"
+          username="hashmat-wani"
           style={{
             minWidth: "770px",
             // border: "1px solid red",

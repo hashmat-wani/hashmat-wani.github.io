@@ -99,7 +99,7 @@
       "location": "Noida, Uttar Pradesh, India",
       "location_type": "Hybrid",
       "desc": "Attentive.ai is the #1 landscape management software provider with end-to-end automation for all outdoor services business needs across landscape maintenance, construction, asphalt and paving maintenance, facilities maintenance, and snow removal.",
-      "logo": "https://media.licdn.com/dms/image/C4D0BAQEg8pBn6aiazg/company-logo_100_100/0/1672898001185?e=1687996800&v=beta&t=5HeYNrO-XrusgYO-wJxb7OEuzhpTQUbHyeStCHdaxww"
+      "logo": "https://media.licdn.com/dms/image/C4D0BAQEg8pBn6aiazg/company-logo_200_200/0/1672898001185?e=1701302400&v=beta&t=TSHZuAxsDQlLo2cRMVRNCb8dg4RFiHD5IitDxgPP3H8"
     },
     {
       "id": "c1",
@@ -107,7 +107,7 @@
       "location": "Bengaluru, Karnataka, India",
       "location_type": "Remote",
       "desc": "Masai is an outcome-driven career school whose mission is to skill India’s untapped & underutilized talent and train them for some of the most in-demand jobs in the world.",
-      "logo": "https://media.licdn.com/dms/image/C560BAQHdxMHntX6Z8Q/company-logo_100_100/0/1650372038245?e=1687392000&v=beta&t=RTztxOQKV5Lnnd1_rFfk6uap5BfufmcxtzfBii2wVy4"
+      "logo": "https://media.licdn.com/dms/image/C560BAQHdxMHntX6Z8Q/company-logo_200_200/0/1650372038245?e=1701302400&v=beta&t=8WlP7RjifSct2XOvt2OglFle8orF-Rm2CHXXJF57mUQ"
     }
   ],
 
@@ -118,11 +118,21 @@
       "employment_type": "Full-time",
       "company_id": "c2",
       "currently_working": true,
-      "start_date": [3, 2023],
+      "start_date": [4, 2023],
       "end_date": false,
       "desc": null,
       "bulletPoints": null,
-      "skills": ["React", " · ", "JavaScript", " · ", "TypeScript"]
+      "skills": [
+        "React",
+        " · ",
+        "JavaScript",
+        " · ",
+        "OpenLayers",
+        " · ",
+        "Performance Improvement",
+        " · ",
+        "Ant Design"
+      ]
     },
 
     {
@@ -227,12 +237,12 @@
         { "title": "Bcrypt", "url": "https://bcrypt-generator.com/" }
       ],
       "demo": "https://ai-img-generatorr.vercel.app/",
-      "github": "https://github.com/hashmat-noorani/AI-Image-Generator-DALL.E",
+      "github": "https://github.com/hashmat-wani/AI-Image-Generator-DALL.E",
       "iframe": "https://ai-img-generatorr.vercel.app/",
       "liveVideo": false,
       "otherCreators_id": null,
       "duration": "Feb 2023",
-      "readme": "https://github.com/hashmat-noorani/AI-Image-Generator-DALL.E/blob/main/README.md"
+      "readme": "https://github.com/hashmat-wani/AI-Image-Generator-DALL.E/blob/main/README.md"
     },
     {
       "id": 2,
@@ -270,12 +280,12 @@
         }
       ],
       "demo": "https://nobita-chatbot.vercel.app/",
-      "github": "https://github.com/hashmat-noorani/Nobita-chatbot",
+      "github": "https://github.com/hashmat-wani/Nobita-chatbot",
       "iframe": "https://nobita-chatbot.vercel.app/",
       "liveVideo": false,
       "otherCreators_id": null,
       "duration": "Jan 2023",
-      "readme": "https://github.com/hashmat-noorani/Nobita-chatbot/blob/main/README.md"
+      "readme": "https://github.com/hashmat-wani/Nobita-chatbot/blob/main/README.md"
     },
     {
       "id": 3,
@@ -296,12 +306,12 @@
         { "title": "Strapi", "url": "https://strapi.io/" }
       ],
       "demo": "https://ecommerce--strapi.vercel.app/",
-      "github": "https://github.com/hashmat-noorani/ecommerce",
+      "github": "https://github.com/hashmat-wani/ecommerce",
       "iframe": "https://ecommerce--strapi.vercel.app/",
       "liveVideo": false,
       "otherCreators_id": null,
       "duration": "Dec 2022",
-      "readme": "https://github.com/hashmat-noorani/ecommerce/blob/main/README.md"
+      "readme": "https://github.com/hashmat-wani/ecommerce/blob/main/README.md"
     },
     {
       "id": 4,
@@ -328,12 +338,12 @@
         }
       ],
       "demo": "https://amazonn-clone.vercel.app/",
-      "github": "https://github.com/hashmat-noorani/Amazon-clone",
+      "github": "https://github.com/hashmat-wani/Amazon-clone",
       "iframe": "https://amazonn-clone.vercel.app/",
       "liveVideo": false,
       "otherCreators_id": null,
       "duration": "Aug 2022",
-      "readme": "https://github.com/hashmat-noorani/Amazon-clone/blob/main/README.md"
+      "readme": "https://github.com/hashmat-wani/Amazon-clone/blob/main/README.md"
     },
     {
       "id": 5,
@@ -369,13 +379,13 @@
           "url": "https://getbootstrap.com/"
         }
       ],
-      "demo": "https://hashmat-noorani.github.io/Weather-App/",
-      "github": "https://github.com/Hashmat-Noorani/Weather-App",
-      "iframe": "https://hashmat-noorani.github.io/Weather-App/",
+      "demo": "https://hashmat-wani.github.io/Weather-App/",
+      "github": "https://github.com/hashmat-wani/Weather-App",
+      "iframe": "https://hashmat-wani.github.io/Weather-App/",
       "liveVideo": false,
       "otherCreators_id": null,
       "duration": "Mar 2022",
-      "readme": "https://github.com/hashmat-noorani/Weather-App/blob/main/README.md"
+      "readme": "https://github.com/hashmat-wani/Weather-App/blob/main/README.md"
     },
     {
       "id": 6,
@@ -406,13 +416,13 @@
           "url": "https://getbootstrap.com/"
         }
       ],
-      "demo": "https://hashmat-noorani.github.io/Kohl-s/",
-      "github": "https://github.com/Hashmat-Noorani/Kohl-s",
-      "iframe": "https://hashmat-noorani.github.io/Kohl-s/",
+      "demo": "https://hashmat-wani.github.io/Kohl-s/",
+      "github": "https://github.com/hashmat-wani/Kohl-s",
+      "iframe": "https://hashmat-wani.github.io/Kohl-s/",
       "liveVideo": false,
       "otherCreators_id": ["97455128", "94161952", "94235431"],
       "duration": "Jan 2022",
-      "readme": "https://github.com/hashmat-noorani/Kohl-s/blob/main/README.md"
+      "readme": "https://github.com/hashmat-wani/Kohl-s/blob/main/README.md"
     },
     {
       "id": 7,
@@ -445,13 +455,13 @@
         "Resumonk(online resume builder) is the Web Application that helps students to get their resume in hand just by filling up a simple form where important credentials need to be filled in.",
         "Fully responsive design - You are no longer dependent on computers, you can quickly search for information using various devices: laptops, smartphones, tablets, and even smartwatches"
       ],
-      "demo": "https://hashmat-noorani.github.io/getCV-Resumonk-Clone/",
-      "github": "https://github.com/Hashmat-Noorani/getCV-Resumonk-Clone",
-      "iframe": "https://hashmat-noorani.github.io/getCV-Resumonk-Clone/",
+      "demo": "https://hashmat-wani.github.io/getCV-Resumonk-Clone/",
+      "github": "https://github.com/hashmat-wani/getCV-Resumonk-Clone",
+      "iframe": "https://hashmat-wani.github.io/getCV-Resumonk-Clone/",
       "liveVideo": false,
       "otherCreators_id": null,
       "duration": "Apr 2020 - May 2020",
-      "readme": "https://github.com/hashmat-noorani/getCV-Resumonk-Clone/blob/main/README.md"
+      "readme": "https://github.com/hashmat-wani/getCV-Resumonk-Clone/blob/main/README.md"
     },
     {
       "id": 8,
@@ -473,12 +483,12 @@
         "ATTENDANCE RECORDS (ADD/MODIFY/DELETE)"
       ],
       "demo": false,
-      "github": "https://github.com/Hashmat-Noorani/SPM",
+      "github": "https://github.com/hashmat-wani/SPM",
       "iframe": "https://drive.google.com/file/d/1RJ7dIVhdBPgxY2q0E7lAgz2XwBOyeEaR/preview",
       "liveVideo": false,
       "otherCreators_id": null,
       "duration": "Jun 2019 - Sep 2019",
-      "readme": "https://github.com/hashmat-noorani/SPM/blob/main/README.md"
+      "readme": "https://github.com/hashmat-wani/SPM/blob/main/README.md"
     }
   ],
 
@@ -488,7 +498,7 @@
       "title": "LinkedIn AutoConnect chrome extension",
       "thumbnail": "https://i.ibb.co/pxDWQFv/linkedin-auto-connect.png",
       "demo": null,
-      "github": "https://github.com/hashmat-noorani/linkedin-auto-connect-chrome-extension",
+      "github": "https://github.com/hashmat-wani/linkedin-auto-connect-chrome-extension",
       "desc": "LinkedIn AutoConnect is a Chrome extension that automates the process of sending connection requests to a list of people in a LinkedIn search. This can save a lot of time for users who want to expand their network quickly and easily. For more details, please go through Github readme."
     },
     {
@@ -496,7 +506,7 @@
       "title": "QR code Generator/Scanner",
       "thumbnail": "https://i.ibb.co/KGR9n6v/qrcode-mv.png",
       "demo": "https://q-rcode-generator-scanner.vercel.app/",
-      "github": "https://github.com/hashmat-noorani/QRcode-Generator-Scanner",
+      "github": "https://github.com/hashmat-wani/QRcode-Generator-Scanner",
       "desc": "This app is combination of both QR code Generator & Scanner, where User can enter a text or URL to generate a styled QR code for it. or scan a QR code by the camera. User can also upload or _Drag & Drop_ any QR code image, and decode or extract the content from it. And Finally User can download a QR code in 3 different formats - PNG/JPG/SVG."
     },
     {
@@ -504,7 +514,7 @@
       "title": "Tic Tac Toe",
       "thumbnail": "https://i.ibb.co/Kz28BVN/tic-tac-toe.png",
       "demo": "https://tic-tac-toe-gamee.vercel.app/",
-      "github": "https://github.com/hashmat-noorani/tic-tac-toe",
+      "github": "https://github.com/hashmat-wani/tic-tac-toe",
       "desc": "Tic-Tac-Toe is a game in which two players seek alternate turns to complete a row, a column, or a diagonal with either three O’s or three X’s drawn in the spaces of a grid of nine squares. For more details, please go through Github readme."
     },
     {
@@ -512,7 +522,7 @@
       "title": "Image Resizer - Compressor",
       "thumbnail": "https://i.ibb.co/VtxRkYp/after-Upload.png",
       "demo": "https://image-compressor-resizer.vercel.app/",
-      "github": "https://github.com/hashmat-noorani/image-compressor-resizer",
+      "github": "https://github.com/hashmat-wani/image-compressor-resizer",
       "desc": "User can upload an image and resize its width & height or reduce its quality(from 10%-100%) with slider. Also User can convert image from jpeg to png and vice versa. Finally user can download resized/converted/compressed images by single click."
     },
     {
@@ -520,7 +530,7 @@
       "title": "Weather App",
       "thumbnail": "https://i.ibb.co/sm2KFbM/weather-app.png",
       "demo": "https://weather-app-beryl-two.vercel.app/",
-      "github": "https://github.com/hashmat-noorani/Weather-App",
+      "github": "https://github.com/hashmat-wani/Weather-App",
       "desc": "Weather App that displays the weather wherever the user happened to be."
     },
     {
@@ -528,7 +538,7 @@
       "title": "English Dictionary",
       "thumbnail": "https://i.ibb.co/CtPW8RP/dictionary.png",
       "demo": "https://english-dictionary-gamma.vercel.app/",
-      "github": "https://github.com/hashmat-noorani/english-dictionary",
+      "github": "https://github.com/hashmat-wani/english-dictionary",
       "desc": "Type a word and get clear and simple definitions with example, pronunciation, synonyms and antonyms"
     },
     {
@@ -536,7 +546,7 @@
       "title": "Alarm Clock",
       "thumbnail": "https://i.ibb.co/RgySj9Q/Screenshot-20230103-044626.png",
       "demo": "https://alarm-clock-murex.vercel.app/",
-      "github": "https://github.com/hashmat-noorani/alarm-clock",
+      "github": "https://github.com/hashmat-wani/alarm-clock",
       "desc": "There is a digital clock that shows the current time along with alarm option. Users can select a time and set alarm for any time, whether AM or PM."
     },
     {
@@ -544,7 +554,7 @@
       "title": "Flip a coin",
       "thumbnail": "https://i.ibb.co/Mp7c4w3/flip-a-coin.png",
       "demo": "https://flip-a-coin-3d.vercel.app/",
-      "github": "https://github.com/hashmat-noorani/flip-a-coin",
+      "github": "https://github.com/hashmat-wani/flip-a-coin",
       "desc": "On flipping a coin, it produces head/tail with a cool 3D animation. It even maintains statistics about the heads and tails count. User can reset the status with the reset button."
     }
   ]
