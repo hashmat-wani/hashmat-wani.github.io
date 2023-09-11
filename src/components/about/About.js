@@ -17,8 +17,8 @@ const About = () => {
           <Avatar />
         </div>
         <p style={{ textAlign: "justify" }}>
-          Hello, I'm Hashmat Wani, a dedicated Full Stack web developer
-          currently serving as an SDE-I Frontend professional at{" "}
+          I'm Hashmat Wani, a dedicated Full Stack web developer currently
+          working as an Software Engineer-I(Frontend) at{" "}
           <a href="https://attentive.ai/" target="_blank">
             Attentive.ai
           </a>

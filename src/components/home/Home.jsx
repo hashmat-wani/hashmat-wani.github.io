@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Typewriter from "typewriter-effect";
 import problemsolving from "../../static/problem-solving.png";
 import leetcode from "../../static/leetcode.svg";
-import resume from "../../static/Hashmat_Wani-Resume.pdf";
+import resume from "../../static/Resume-Hashmat.pdf";
 
 const ThingsILove = () => (
   <Flex justify="space-between" align="center">
@@ -76,7 +76,7 @@ const Home = () => {
             <Button
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1S9ENhZDQJv1Yt65Z6_jJoJwcu1LXULRx/view?usp=share_link"
+                  "https://drive.google.com/file/d/1SrAcY7BGsAU9X65o6vyP5mZV-U4yf3bB/view?usp=sharing"
                 )
               }
               target="_blank"
