@@ -99,15 +99,15 @@
       "location": "Noida, Uttar Pradesh, India",
       "location_type": "Hybrid",
       "desc": "Attentive.ai is the #1 landscape management software provider with end-to-end automation for all outdoor services business needs across landscape maintenance, construction, asphalt and paving maintenance, facilities maintenance, and snow removal.",
-      "logo": "https://media.licdn.com/dms/image/C4D0BAQEg8pBn6aiazg/company-logo_200_200/0/1672898001185?e=1701302400&v=beta&t=TSHZuAxsDQlLo2cRMVRNCb8dg4RFiHD5IitDxgPP3H8"
+      "logo": "https://media.licdn.com/dms/image/C4D0BAQEg8pBn6aiazg/company-logo_200_200/0/1672898001624/attentiveai_logo?e=1715212800&v=beta&t=5W4-oHa2u4zHn4qFTJAUZNTA5KKd8Hp4o1o-Gtx6vVU"
     },
     {
       "id": "c1",
-      "name": "Masai School",
+      "name": "Masai",
       "location": "Bengaluru, Karnataka, India",
       "location_type": "Remote",
       "desc": "Masai is an outcome-driven career school whose mission is to skill India’s untapped & underutilized talent and train them for some of the most in-demand jobs in the world.",
-      "logo": "https://media.licdn.com/dms/image/C560BAQHdxMHntX6Z8Q/company-logo_200_200/0/1650372038245?e=1701302400&v=beta&t=8WlP7RjifSct2XOvt2OglFle8orF-Rm2CHXXJF57mUQ"
+      "logo": "https://media.licdn.com/dms/image/C560BAQHdxMHntX6Z8Q/company-logo_200_200/0/1650372038758/masai_school_logo?e=1715212800&v=beta&t=KoBTZYxCqSpxFFzDoN_Qb0ejOpL3pTvfEjU0s2qk9fU"
     }
   ],
 
@@ -120,12 +120,16 @@
       "currently_working": true,
       "start_date": [4, 2023],
       "end_date": false,
-      "desc": null,
+      "desc": "Contributing to the ongoing development of Attentive.ai's OpenLayers-based Frontend for outdoor services businesses. Actively collaborating with cross-functional teams to create user-friendly, industry-specific interfaces.",
       "bulletPoints": null,
       "skills": [
-        "React",
+        "React.js",
         " · ",
         "JavaScript",
+        " · ",
+        "TypeScript",
+        " · ",
+        "Next.js",
         " · ",
         "OpenLayers",
         " · ",
@@ -137,20 +141,14 @@
 
     {
       "id": "e2",
-      "title": "Instructional Associate",
+      "title": "Software Developer / IA",
       "employment_type": "Full-time",
       "company_id": "c1",
       "currently_working": false,
       "start_date": [4, 2022],
-      "end_date": [2, 2023],
-      "desc": "During my time at the company, my main responsibilities included:",
-      "bulletPoints": [
-        "taking live coding and DSA curriculum doubt sessions for students on Zoom.",
-        "handling over 70 students on Slack, resolving their technical queries and doubts.",
-        "taking one-on-one pair programming sessions with students to help them develop their problem-solving skills",
-        "reviewing projects made by students and delivering lectures whenever required.",
-        "Overall, I played an active role in helping students understand and excel in the curriculum."
-      ],
+      "end_date": [3, 2023],
+      "desc": "Contributed to the development of the company's website and Online DSA Coding platform. Additionally, conducted live coding sessions, resolved technical queries, led pair programming, reviewed projects, and delivered lectures, fostering student excellence.",
+      "bulletPoints": null,
       "skills": [
         "React",
         " · ",
@@ -167,15 +165,46 @@
     },
     {
       "id": "e1",
-      "title": "Student Guide",
-      "employment_type": "Part-time",
+      "title": "Student Trainee",
+      "employment_type": "Full-time",
       "company_id": "c1",
       "currently_working": false,
-      "start_date": [2, 2022],
-      "end_date": [3, 2022],
-      "desc": "Student Guide in Masai works with 10 students on average and thus they have the bandwidth to connect with students for their smallest of queries.",
+      "start_date": [11, 2021],
+      "end_date": [4, 2022],
+      "desc": "Completed Masai's rigorous Full Stack Web Development program, engaging in 2160 hours of practical learning.",
       "bulletPoints": false,
-      "skills": false
+      "skills": [
+        "Data Structures",
+        " . ",
+        "HTML",
+        " · ",
+        "CSS",
+        " · ",
+        "Tailwind CSS",
+        " · ",
+        "Javascript",
+        " · ",
+        "Typescript",
+        " · ",
+        "React.js",
+        " · ",
+        "Next.js",
+        " · ",
+        "Node.js",
+        " · ",
+        "Express.js",
+        " · ",
+        "MongoDB",
+        " · ",
+        "mongoose",
+        " · ",
+        "JSON Web Token(JWT)",
+        " · ",
+        "Material-UI",
+        " · ",
+        "Ant Design",
+        " · "
+      ]
     }
   ],
 

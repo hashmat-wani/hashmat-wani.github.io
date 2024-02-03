@@ -63,7 +63,7 @@ const About = () => {
             <p>Full Stack Web Development - MERN</p>
             <p>2160 hours of practical learning</p>
             <br />
-            <i>Nov 2021 - May 2022</i>
+            <i>Nov 2021 - Apr 2022</i>
           </Education>
           <Education>
             <a
