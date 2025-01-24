@@ -226,7 +226,7 @@ const Experience = () => {
                           </div>
                           {exp.skills && (
                             <p>
-                              <b>Skills: </b>
+                              <b>Exposure: </b>
                               {exp.skills}
                             </p>
                           )}

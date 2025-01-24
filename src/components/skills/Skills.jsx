@@ -57,9 +57,12 @@ const WordClouds = () => {
       <p style={{ top: 180, left: "48%", fontSize: 23 }}>ES6</p>
       <p style={{ top: 350, left: 80, fontSize: 18 }}>Bootstrap</p>
       <p style={{ top: 120, left: "65%", fontSize: 20 }}>Redux</p>
+      <p style={{ top: 220, left: "30%", fontSize: 20 }}>ESLint</p>
       <p style={{ top: 140, left: "93%", fontSize: 20 }}>Express.js</p>
+      <p style={{ top: 250, left: "90%", fontSize: 25 }}>Jenkins</p>
       <p style={{ top: 280, left: "75%", fontSize: 14 }}>Firebase</p>
       <p style={{ top: 120, left: "16%", fontSize: 15 }}>Tailwind CSS</p>
+      <p style={{ top: 210, left: "12%", fontSize: 22 }}>WebSocket</p>
     </Parallax>
   );
 };

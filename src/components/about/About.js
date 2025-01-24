@@ -17,18 +17,12 @@ const About = () => {
           <Avatar />
         </div>
         <p style={{ textAlign: "justify" }}>
-          I'm Hashmat Wani, a dedicated Full Stack web developer currently
-          working as an Software Engineer-I(Frontend) at{" "}
+          Hello, I'm Hashmat Wani, a Software Engineer II Frontend at{" "}
           <a href="https://attentive.ai/" target="_blank">
             Attentive.ai
           </a>
-          . I have developed a skill set in creating reusable components and
-          optimizing React application performance. Additionally, I am
-          proficient in integrating APIs into React applications using Axios and
-          Fetch and utilizing various React tools and libraries such as Redux,
-          React Router, and Material UI. As someone who is passionate about
-          coding, I am always seeking ways to improve my skills and apply them
-          to real-world projects.
+          . I specialize in scalable front-end solutions, performance
+          optimization, and enhancing user experiences.
         </p>
       </AboutInfo>
       <div className="education__wrapper">

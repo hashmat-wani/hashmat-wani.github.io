@@ -99,7 +99,7 @@
       "location": "Noida, Uttar Pradesh, India",
       "location_type": "Hybrid",
       "desc": "Attentive.ai is the #1 landscape management software provider with end-to-end automation for all outdoor services business needs across landscape maintenance, construction, asphalt and paving maintenance, facilities maintenance, and snow removal.",
-      "logo": "https://media.licdn.com/dms/image/C4D0BAQEg8pBn6aiazg/company-logo_200_200/0/1672898001624/attentiveai_logo?e=1715212800&v=beta&t=5W4-oHa2u4zHn4qFTJAUZNTA5KKd8Hp4o1o-Gtx6vVU"
+      "logo": "https://media.licdn.com/dms/image/v2/D560BAQGEXAvrsPOm9Q/company-logo_200_200/company-logo_200_200/0/1735802863708/attentiveai_logo?e=1746057600&v=beta&t=MVlQSYwxYpqOSJ0zDgudcOrmx08WCD_qIIxdR55Yf-U"
     },
     {
       "id": "c1",
@@ -107,11 +107,44 @@
       "location": "Bengaluru, Karnataka, India",
       "location_type": "Remote",
       "desc": "Masai is an outcome-driven career school whose mission is to skill India’s untapped & underutilized talent and train them for some of the most in-demand jobs in the world.",
-      "logo": "https://media.licdn.com/dms/image/C560BAQHdxMHntX6Z8Q/company-logo_200_200/0/1650372038758/masai_school_logo?e=1715212800&v=beta&t=KoBTZYxCqSpxFFzDoN_Qb0ejOpL3pTvfEjU0s2qk9fU"
+      "logo": "https://media.licdn.com/dms/image/v2/D560BAQGnrGDvNbuurg/company-logo_200_200/company-logo_200_200/0/1737373064896/masaischool_logo?e=1746057600&v=beta&t=PRc6VKXkYQ-rw77UNoO5BtepsRzpr-eEFuNWuMnWf1Y"
     }
   ],
 
   "experiences": [
+    {
+      "id": "e4",
+      "title": "Software Engineer II",
+      "employment_type": "Full-time",
+      "company_id": "c2",
+      "currently_working": true,
+      "start_date": [1, 2025],
+      "end_date": false,
+      "desc": "",
+      "bulletPoints": [
+        "Delivered critical features like advanced tagging, geometry measurement, and real-time autosave, reducing annotation time by 10% and syncing lag to near-zero.",
+        "Built a Detailed Report feature using ag-Grid, enabling advanced data presentation and interaction for end-users.",
+        "Developed a WebSocket-based save system for real-time status updates, enhancing responsiveness and user experience.",
+        "Enhanced web performance and scalability through reusable component design and architecture improvements."
+      ],
+      "skills": [
+        "TypeScript",
+        " · ",
+        "React Query",
+        " · ",
+        "Zustand",
+        " · ",
+        "WebSocket",
+        " · ",
+        "AG Grid",
+        " · ",
+        "Performance Improvement",
+        " · ",
+        "ESLint",
+        " · ",
+        "Jenkins"
+      ]
+    },
     {
       "id": "e3",
       "title": "Software Engineer",
@@ -119,15 +152,13 @@
       "company_id": "c2",
       "currently_working": true,
       "start_date": [4, 2023],
-      "end_date": false,
+      "end_date": [12, 2024],
       "desc": "Contributing to the ongoing development of Attentive.ai's OpenLayers-based Frontend for outdoor services businesses. Actively collaborating with cross-functional teams to create user-friendly, industry-specific interfaces.",
       "bulletPoints": null,
       "skills": [
         "React.js",
         " · ",
         "JavaScript",
-        " · ",
-        "TypeScript",
         " · ",
         "Next.js",
         " · ",
